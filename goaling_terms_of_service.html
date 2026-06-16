@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>利用規約｜Goaling</title>
+  <meta name="description" content="Goalingのサービス内容、料金、契約期間、解約、返金保証、禁止事項等について定める利用規約です。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+JP:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --blue:#0347D8; --blue-2:#0A5BFF; --blue-3:#EAF2FF; --navy:#07152F; --ink:#081225; --muted:#6D778A; --line:#DCE4F0; --white:#FFF; --green:#06C755; --green-2:#078946; --max:1240px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:'Inter','Noto Sans JP',system-ui,-apple-system,BlinkMacSystemFont,sans-serif;color:var(--ink);background:linear-gradient(180deg,#fff 0%,#F8FBFF 100%);letter-spacing:.01em}
+    a{text-decoration:none;color:inherit} img{display:block;max-width:100%}
+    .container{max-width:var(--max);margin:0 auto;padding:0 24px}
+    .section-shell{max-width:var(--max);margin:0 auto;padding:0 24px 28px}
+    .section-card{background:#fff;border:1px solid var(--line);border-radius:24px;overflow:hidden;box-shadow:0 8px 30px rgba(6,24,54,.04)}
+    .mobile-only{display:none!important}
+
+    .feature-section{padding-top:34px;}
+    .feature-section .section-card{padding:28px 30px 30px;}
+    .feature-section .section-head{padding:0 0 18px;}
+    .feature-section .feature-panels{padding:0;}
+    .feature-section .section-sub{max-width:660px;}
+    .cta-right{display:flex;align-items:center;height:100%}.cta-main{display:flex;flex-direction:column;align-items:flex-start}.cta-main .cta-buttons{width:100%}.cta-main .cta-buttons .btn{width:100%;justify-content:center}.cta-points{display:grid;grid-template-columns:1fr;gap:14px;margin-top:0;width:100%;align-content:center;}
+    .cta-point{text-align:left;display:flex;align-items:center;min-height:78px;padding:18px 18px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.16);}
+    .line-icon{width:18px;height:18px;object-fit:contain;flex:0 0 auto}
+
+    .header{position:sticky;top:0;z-index:40;background:rgba(255,255,255,.88);backdrop-filter:blur(18px);border-bottom:1px solid rgba(220,228,240,.85)}
+    .nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .logo{display:inline-flex;align-items:center;color:var(--navy)} .logo img{height:34px;width:auto;display:block;background:transparent}
+    .nav-links{display:flex;align-items:center;gap:34px;font-size:13px;font-weight:800;color:#0E1932}
+    .header-cta{display:inline-flex;align-items:center;gap:8px;padding:11px 16px;border:1px solid var(--blue);border-radius:10px;font-size:13px;font-weight:800;background:var(--blue);color:#fff;white-space:nowrap;box-shadow:0 10px 24px rgba(3,71,216,.18)}
+
+    .hero{position:relative;overflow:hidden;background:#fff;border-bottom:1px solid var(--line)}
+    .hero:before{content:'';position:absolute;right:-110px;top:-130px;width:640px;height:590px;background:linear-gradient(135deg,#B7D7FF 0%,#5C9CFF 58%,#2E74ED 100%);clip-path:polygon(28% 0,100% 0,100% 62%,52% 100%,0 42%);opacity:.75}
+    .hero:after{content:'';position:absolute;right:128px;top:205px;width:360px;height:230px;background-image:radial-gradient(#2F7CFF 1px,transparent 1px);background-size:15px 15px;opacity:.22;transform:rotate(-2deg)}
+    .hero-inner{position:relative;z-index:2;display:grid;grid-template-columns:1fr 1.08fr;gap:44px;align-items:center;padding:74px 0 42px}
+    h1{font-size:clamp(48px,4.9vw,76px);line-height:1.1;letter-spacing:-.075em;margin:0 0 14px;font-weight:900} h1 .blue{color:var(--blue)}
+    .lead{font-size:20px;line-height:1.85;font-weight:700;color:#18233A;margin:0 0 14px} .desc{font-size:16px;line-height:1.85;color:#2E3A52;margin:0 0 28px;font-weight:500}
+    .actions{display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:18px 28px;border-radius:8px;font-size:15px;font-weight:900;border:1px solid transparent;transition:.2s ease} .btn:hover{transform:translateY(-1px)}
+    .btn-blue{background:var(--blue);color:#fff;box-shadow:0 18px 35px rgba(3,71,216,.22)} .btn-line{background:#fff;color:#06142E;border-color:#11A653} .hero-actions{align-items:stretch}.hero-actions .btn{justify-content:center}
+
+    .hero-phones{display:flex;align-items:flex-end;justify-content:center;gap:18px;min-height:490px} .hero-phone-mobile{display:none;justify-content:center;align-items:center;margin:20px auto 18px;width:100%}
+    .hero-device-wrap{width:216px;flex:0 0 auto;display:flex;justify-content:center;align-items:flex-end;filter:drop-shadow(0 24px 24px rgba(8,18,37,.12));overflow:visible}.hero-device-image{width:282px;max-width:none;height:auto;display:block;flex:0 0 auto}
+
+    .feature-panels{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;padding:22px}
+    .feature-card{border:1px solid var(--line);border-radius:18px;padding:18px 16px;display:grid;grid-template-columns:42px 1fr;gap:14px;align-items:start;background:#fff;min-height:118px}
+    .feature-ico{width:42px;height:42px;border-radius:14px;object-fit:cover;box-shadow:0 2px 8px rgba(0,0,0,.06)}
+    .feature-card h3{margin:0 0 6px;font-size:15px;font-weight:900;line-height:1.45} .feature-card p{margin:0;color:#334158;font-size:12px;line-height:1.65;font-weight:600}
+
+    .section-title{font-size:28px;line-height:1.35;letter-spacing:-.04em;margin:0;color:var(--blue);font-weight:900} .section-sub{font-size:13px;color:#65738A;font-weight:700;margin:8px 0 0}
+    .section-head{padding:0 0 14px}
+
+    .method-panel{background:linear-gradient(135deg,#051329 0%,#08285A 100%);color:#fff;padding:40px 42px;position:relative;overflow:hidden}
+    .method-panel:after{content:'';position:absolute;right:-120px;bottom:-120px;width:300px;height:260px;border:1px solid rgba(255,255,255,.14);border-radius:50%}
+    .method-grid{display:grid;grid-template-columns:.88fr 1.12fr;gap:26px;align-items:center;position:relative;z-index:1}
+    .mini{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#80AFFF;font-weight:900;margin-bottom:10px}
+    .method-panel .section-title{color:#fff;font-size:30px;margin-bottom:12px}
+    .method-text p{margin:0;color:#E0EAFF;font-size:14px;line-height:1.95;font-weight:700;max-width:360px}
+    .method-cycle{display:grid;place-items:center;min-width:0;padding:8px 0}
+    .cycle-diagram{width:min(100%,460px);aspect-ratio:1/1;position:relative;margin:auto}
+    .cycle-diagram:before{content:'';position:absolute;inset:14%;border:2px solid rgba(175,201,248,.76);border-radius:50%} .cycle-diagram:after{content:'↻';position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);font-size:58px;line-height:1;color:#0A5BFF;opacity:.18;font-weight:900}
+    .cycle-node{position:absolute;width:128px;min-height:60px;padding:10px;border-radius:12px;background:#fff;border:1px solid #C7D6EF;box-shadow:0 12px 26px rgba(3,20,55,.18);font-size:11px;line-height:1.35;font-weight:900;color:#12315F;text-align:center;display:grid;place-items:center;z-index:2}
+    .cycle-node small{display:block;font-size:9px;color:#66758C;font-weight:800;margin-top:2px}
+    .cycle-node{transform:translate(-50%,-50%)} .cycle-node.n1{left:50%;top:14%} .cycle-node.n2{left:84.24%;top:38.88%} .cycle-node.n3{left:71.16%;top:79.12%} .cycle-node.n4{left:28.84%;top:79.12%} .cycle-node.n5{left:15.76%;top:38.88%}
+    .cycle-node.center{left:50%;top:50%;transform:translate(-50%,-50%);width:118px;height:118px;border-radius:999px;background:linear-gradient(180deg,#fff,#F2F7FF);border:2px solid #0A5BFF;color:#0347D8;font-size:16px;box-shadow:0 18px 36px rgba(3,71,216,.16)}
+
+    .reason-panel,.comparison-panel,.pricing-panel{padding:30px 34px 34px}
+    .reason-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:26px} .reason-item{display:grid;grid-template-columns:42px 1fr;gap:14px;padding:12px 0} .reason-num{width:34px;height:34px;border-radius:50%;background:var(--blue-3);color:var(--blue);display:grid;place-items:center;font-weight:900;font-size:13px} .reason-item h3{font-size:16px;margin:0 0 5px;font-weight:900} .reason-item p{font-size:12px;line-height:1.65;color:#4B5870;margin:0;font-weight:600}
+
+    .split-head{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;margin-bottom:16px}
+    .table-wrap{overflow-x:auto;overflow-y:hidden;border:1px solid var(--line);border-radius:12px;background:#fff;-webkit-overflow-scrolling:touch} .table-wrap::-webkit-scrollbar,.plans-grid::-webkit-scrollbar{height:8px} .table-wrap::-webkit-scrollbar-thumb,.plans-grid::-webkit-scrollbar-thumb{background:#BFD0E8;border-radius:999px}
+    table{width:100%;border-collapse:collapse;min-width:980px;font-size:13px} th,td{border-bottom:1px solid var(--line);border-right:1px solid var(--line);padding:13px 12px;text-align:center;vertical-align:middle;line-height:1.45} th:last-child,td:last-child{border-right:0} tr:last-child td{border-bottom:0} th{background:#F7FAFF;font-weight:900;color:#17233B} th.goaling{background:var(--blue);color:#fff} td.rowhead{background:#F8FAFD;text-align:left;font-weight:900;color:#48556B} td.goaling{background:#F1F6FF;font-weight:900;color:#071D4F}
+    .note{font-size:11px;color:#7A879A;margin:10px 0 0;font-weight:600}
+
+    .plans-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:18px} .plan{border:1px solid #C7D6EF;border-radius:14px;padding:22px 16px;background:#fff;min-height:218px;position:relative} .plan.featured{border:2px solid var(--blue);box-shadow:0 12px 28px rgba(3,71,216,.12)} .badge{position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:var(--blue);color:#fff;font-size:11px;font-weight:900;padding:5px 15px;border-radius:7px} .plan h3{font-size:15px;margin:0 0 14px;font-weight:900} .price{font-size:36px;font-weight:900;letter-spacing:-.06em;margin:0 0 8px} .price small{font-size:13px;letter-spacing:0;margin-left:2px} .plan ul{list-style:none;padding:0;margin:16px 0 0;display:grid;gap:7px;font-size:12px;color:#27334A;font-weight:700} .plan li:before{content:'✓';margin-right:7px;color:var(--blue);font-weight:900} .plan .select{margin-top:18px;display:flex;align-items:center;justify-content:center;height:40px;border-radius:8px;border:1px solid #ABC0DE;color:var(--blue);font-size:12px;font-weight:900} .plan.monthly-plan .select{margin-top:40px} .plan.featured .select{background:var(--blue);color:#fff;border-color:var(--blue)}
+    .line-wide{grid-column:1/-1;border:1px solid #16B75B;background:linear-gradient(180deg,#EFFFF6,#FFFFFF);border-radius:16px;padding:24px 22px;display:grid;grid-template-columns:1.05fr 1fr;gap:18px;align-items:center} .line-wide h3{margin:0 0 10px;font-size:22px;color:var(--green-2);font-weight:900;line-height:1.4} .line-wide p{margin:0;color:#335245;font-size:13px;line-height:1.8;font-weight:700} .line-wide ul{list-style:none;padding:0;margin:0;display:grid;gap:8px;font-size:13px;color:#27334A;font-weight:700} .line-wide li:before{content:'✓';margin-right:7px;color:var(--green);font-weight:900} .line-action{display:flex;justify-content:flex-start;margin-top:16px} .line-action a{display:inline-flex;align-items:center;gap:8px;padding:12px 18px;border:1px solid var(--green);border-radius:10px;color:var(--green-2);font-size:13px;font-weight:900;background:#fff}
+
+    .faq-panel{display:grid;grid-template-columns:.9fr 1.2fr;align-items:stretch} .faq-left{padding:34px;border-right:1px solid var(--line);background:#F8FBFF} .faq-left .section-title{margin-bottom:8px} .faq-left p{margin:0;color:#5B6A81;font-size:13px;line-height:1.85;font-weight:700;max-width:290px} .faq-right{padding:28px 34px 34px} .faq-item{border:1px solid var(--line);border-radius:10px;margin-bottom:10px;background:#fff;overflow:hidden} .faq-question{width:100%;border:0;background:#fff;padding:14px 16px;display:flex;align-items:center;justify-content:space-between;gap:20px;text-align:left;font:inherit;font-size:14px;font-weight:800;color:#28344A;cursor:pointer} .faq-question:hover{background:#F8FBFF} .faq-icon{color:var(--blue);font-size:21px;line-height:1;transition:transform .2s ease;flex:0 0 auto} .faq-item.open .faq-icon{transform:rotate(45deg)} .faq-answer{display:none;padding:0 16px 16px;color:#526078;font-size:13px;line-height:1.8;font-weight:600} .faq-item.open .faq-answer{display:block}
+
+    .final-cta{background:linear-gradient(120deg,#0244D5 0%,#0653FA 55%,#002967 100%);color:#fff;overflow:hidden;border-radius:24px;border:1px solid rgba(255,255,255,.15);position:relative} .final-cta:before{content:'';position:absolute;left:42%;top:-80px;width:320px;height:440px;background:rgba(255,255,255,.08);transform:skewX(-18deg)} .cta-inner{position:relative;z-index:2;display:grid;grid-template-columns:minmax(0,1.02fr) minmax(360px,.98fr);align-items:stretch;gap:36px;padding:48px 34px} .final-cta h2{color:#fff;font-size:36px;line-height:1.45;margin:0 0 8px} .final-cta p{font-size:15px;line-height:1.9;color:#DDEAFF;font-weight:700;margin:0} .cta-buttons{display:flex;gap:15px;flex-wrap:wrap;margin-top:20px} .btn-white{background:#fff;color:var(--blue)} .btn-ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.38)} .cta-points{display:grid;grid-template-columns:1fr;gap:14px;margin-top:0;width:100%;align-content:center} .cta-point{border:1px solid rgba(255,255,255,.22);border-radius:12px;padding:18px;text-align:left;color:#EAF2FF;font-size:13px;font-weight:800}
+
+    footer{padding:0 0 30px} .footer-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr 1.3fr;gap:30px;align-items:start;padding:34px} .footer-desktop{display:grid} .footer-mobile{display:none} .footer-logo{display:inline-flex;align-items:center;margin-bottom:8px} .footer-desktop .footer-brand{display:flex;flex-direction:column;align-items:flex-start;text-align:left} .footer-desktop .footer-tagline{font-size:12px;color:#4D5A70;font-weight:700;line-height:1.9;margin:0;text-align:left} .footer-logo img{height:34px;width:auto;display:block;background:transparent} .footer small,.footer a,.footer p{font-size:12px;color:#4D5A70;font-weight:700;line-height:1.9;margin:0} .footer h4{font-size:12px;font-weight:900;margin:0 0 10px;color:#101A2F} .footer-bottom{display:grid;grid-template-columns:1fr auto;gap:24px;align-items:end;padding:0 34px 30px} .medical{border:1px solid #C8D7EF;border-radius:8px;padding:13px 16px;color:#536177;font-size:12px;font-weight:700;line-height:1.7} .copy{text-align:right;font-size:12px;color:#607086;font-weight:700} .footer-mobile-grid{display:grid;grid-template-columns:1fr;gap:20px;padding:28px 18px 20px} .footer-brand{display:flex;flex-direction:column;align-items:flex-start;text-align:left} .footer-tagline{font-size:12px;color:#4D5A70;font-weight:700;line-height:1.9;margin:0;text-align:left} .footer-nav{display:grid;grid-template-columns:1fr;align-self:stretch} .footer-nav-item{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:15px 0;border-top:1px solid #E2E8F2;font-size:15px;font-weight:700;color:#1A243A} .footer-nav-item:last-child{border-bottom:1px solid #E2E8F2} .footer-nav-item .arrow{display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border:1px solid #D5DEEB;border-radius:999px;color:#7FA6F4;font-size:12px;flex:0 0 auto} .footer-meta{display:flex;flex-direction:column;gap:12px}
+
+    @media (max-width:1100px){ .hero-inner{grid-template-columns:1fr;gap:26px;padding-top:54px} .hero-phones{justify-content:flex-start;overflow-x:auto;padding-bottom:4px} .hero-device-wrap{width:210px}.hero-device-image{width:274px} .feature-panels{grid-template-columns:repeat(2,1fr)} .method-grid{grid-template-columns:1fr} .reason-list{grid-template-columns:1fr 1fr} .faq-panel{grid-template-columns:1fr} .faq-left{border-right:0;border-bottom:1px solid var(--line)} .footer-grid{grid-template-columns:1fr 1fr} .footer-bottom{grid-template-columns:1fr} .copy{text-align:left} }
+    @media (max-width:820px){ .container,.section-shell{padding-left:18px;padding-right:18px} .nav-links{display:none} .nav{height:64px;gap:12px} .logo img{height:28px} .header-cta{padding:9px 12px;font-size:12px;border-radius:10px} .hero:before{right:-190px;top:-210px;width:520px;height:520px;opacity:.55} .hero:after{right:-40px;top:130px;width:220px;height:160px;background-size:13px 13px} .hero-inner{padding:38px 0 28px;text-align:center} .hero-inner > div:first-child{display:flex;flex-direction:column;align-items:center} h1{font-size:clamp(44px,14vw,60px);letter-spacing:-.075em;text-align:center;margin-left:auto;margin-right:auto} .lead{font-size:16px;line-height:1.8;text-align:center;margin-left:auto;margin-right:auto;max-width:22em} .mobile-lead-break{display:block} .desc{font-size:14px;line-height:1.85;text-align:center;margin-left:auto;margin-right:auto} .actions{align-items:center;justify-content:center;width:100%} .btn{width:100%;padding:16px 18px;font-size:14px} .hero-actions{flex-direction:column;align-items:center;gap:12px} .hero-actions .btn{width:min(100%,348px);padding:14px 12px;font-size:clamp(12px,3.2vw,13px);white-space:nowrap} .hero-phones{display:none} .hero-phone-mobile{display:flex;margin:14px auto 14px} .hero-phone-mobile .hero-device-wrap{width:168px}.hero-phone-mobile .hero-device-image{width:220px;max-width:none;display:block} .feature-panels{grid-template-columns:1fr 1fr;gap:10px;padding:0} .feature-section{padding-top:24px;} .feature-section .section-card{padding:22px 14px 14px;} .feature-section .section-head{padding:0 0 14px;} .feature-section .section-title{font-size:24px;} .feature-section .section-sub{font-size:12px;}  .feature-card{grid-template-columns:34px 1fr;gap:10px;padding:14px 12px;min-height:104px} .feature-ico{width:34px;height:34px;border-radius:10px} .feature-card h3{font-size:13px;line-height:1.45} .feature-card p{font-size:11px;line-height:1.55} .method-panel{padding:30px 18px} .method-panel .section-title{font-size:26px} .cycle-diagram{width:min(100%,330px);min-width:286px} .cycle-node{width:92px;min-height:56px;font-size:9.5px;padding:8px 6px} .cycle-node.center{width:94px;height:94px;font-size:13px} .reason-panel,.comparison-panel,.pricing-panel,.faq-left,.faq-right{padding:24px 18px} .reason-list{grid-template-columns:1fr} .mobile-only{display:flex!important} table{min-width:920px;font-size:12px} th,td{padding:12px 10px} .plans-grid{grid-template-columns:1fr;gap:12px} .line-wide{grid-template-columns:1fr;padding:20px 18px} .cta-inner{grid-template-columns:1fr;padding:38px 18px} .cta-main .cta-buttons .btn{width:100%} .final-cta h2{font-size:26px} .cta-points{grid-template-columns:1fr;gap:10px} .footer-desktop{display:none}.footer-mobile{display:block}.footer-mobile-grid{grid-template-columns:1fr;gap:20px;padding:28px 18px 20px}.footer-bottom{padding:0 18px 24px} }
+    @media (max-width:430px){ .hero-phone-mobile .hero-device-wrap{width:150px}.hero-phone-mobile .hero-device-image{width:196px;max-width:none} .cycle-diagram{min-width:272px} .cycle-node{width:88px;font-size:9px} .cycle-node.center{width:90px;height:90px;font-size:12.5px} }
+  
+
+    /* Privacy policy page */
+    .legal-hero{position:relative;overflow:hidden;background:linear-gradient(135deg,#F7FAFF 0%,#EDF4FF 58%,#FFFFFF 100%);border-bottom:1px solid var(--line)}
+    .legal-hero:before{content:'';position:absolute;right:-120px;top:-210px;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,rgba(73,138,255,.28) 0%,rgba(73,138,255,0) 70%)}
+    .legal-hero:after{content:'';position:absolute;right:8%;bottom:18px;width:260px;height:145px;background-image:radial-gradient(#2F7CFF 1px,transparent 1px);background-size:15px 15px;opacity:.18}
+    .legal-hero-inner{position:relative;z-index:1;padding:78px 0 62px}
+    .legal-kicker{display:inline-flex;align-items:center;gap:8px;margin-bottom:18px;padding:7px 12px;border:1px solid #BCD2F5;border-radius:999px;background:rgba(255,255,255,.78);color:var(--blue);font-size:12px;font-weight:900;letter-spacing:.08em}
+    .legal-kicker:before{content:'';width:7px;height:7px;border-radius:50%;background:var(--blue)}
+    .legal-hero h1{margin:0;color:var(--navy);font-size:clamp(38px,5vw,64px);line-height:1.15;letter-spacing:-.055em;font-weight:900}
+    .legal-hero p{max-width:720px;margin:18px 0 0;color:#4F5F78;font-size:15px;line-height:1.9;font-weight:600}
+    .legal-breadcrumb{display:flex;align-items:center;gap:8px;margin-top:26px;color:#687790;font-size:12px;font-weight:700}
+    .legal-breadcrumb a{color:var(--blue)}
+
+    .legal-page{padding:42px 0 80px}
+    .legal-layout{display:grid;grid-template-columns:250px minmax(0,1fr);gap:28px;align-items:start}
+    .legal-toc{position:sticky;top:92px;border:1px solid var(--line);border-radius:16px;background:#fff;box-shadow:0 12px 30px rgba(15,37,74,.06);overflow:hidden}
+    .legal-toc-title{padding:18px 20px;border-bottom:1px solid var(--line);color:var(--navy);font-size:13px;font-weight:900}
+    .legal-toc nav{padding:10px}
+    .legal-toc a{display:block;padding:9px 10px;border-radius:8px;color:#516078;font-size:12px;line-height:1.45;font-weight:700;transition:.18s ease}
+    .legal-toc a:hover{background:#EFF5FF;color:var(--blue)}
+    .legal-mobile-toc{display:none;margin-bottom:18px;border:1px solid var(--line);border-radius:14px;background:#fff;overflow:hidden}
+    .legal-mobile-toc summary{cursor:pointer;list-style:none;padding:16px 18px;color:var(--navy);font-size:13px;font-weight:900}
+    .legal-mobile-toc summary::-webkit-details-marker{display:none}
+    .legal-mobile-toc summary:after{content:'＋';float:right;color:var(--blue);font-size:17px}
+    .legal-mobile-toc[open] summary:after{content:'−'}
+    .legal-mobile-toc nav{display:grid;grid-template-columns:1fr 1fr;gap:6px;padding:0 12px 14px}
+    .legal-mobile-toc a{padding:9px 8px;border-radius:7px;background:#F6F9FE;color:#53617A;font-size:11px;font-weight:700}
+
+    .legal-document{border:1px solid var(--line);border-radius:20px;background:#fff;box-shadow:0 16px 40px rgba(15,37,74,.07);overflow:hidden}
+    .legal-preamble{padding:30px 34px;background:linear-gradient(180deg,#FBFDFF,#F5F9FF);border-bottom:1px solid var(--line)}
+    .legal-preamble h2{margin:0 0 14px;color:var(--blue);font-size:14px;font-weight:900;letter-spacing:.06em}
+    .legal-preamble p{margin:0;color:#27354C;font-size:14px;line-height:2;font-weight:600}
+    .legal-section{scroll-margin-top:92px;padding:34px;border-bottom:1px solid var(--line)}
+    .legal-section:last-child{border-bottom:0}
+    .legal-section-title{display:flex;align-items:flex-start;gap:14px;margin:0 0 18px;color:var(--navy);font-size:22px;line-height:1.45;font-weight:900;letter-spacing:-.025em}
+    .legal-section-title .num{display:inline-flex;align-items:center;justify-content:center;min-width:38px;height:38px;padding:0 9px;border-radius:10px;background:var(--blue);color:#fff;font-size:12px;letter-spacing:0;box-shadow:0 8px 18px rgba(3,71,216,.18)}
+    .legal-section p{margin:0 0 14px;color:#344158;font-size:14px;line-height:2;font-weight:500}
+    .legal-section p:last-child{margin-bottom:0}
+    .legal-section ol,.legal-section ul{margin:14px 0 18px;padding-left:1.55em;color:#344158;font-size:14px;line-height:2;font-weight:500}
+    .legal-section li{padding-left:.25em;margin-bottom:7px}
+    .legal-section li:last-child{margin-bottom:0}
+    .legal-section strong{color:#14213A;font-weight:900}
+    .legal-note{margin-top:18px;padding:16px 18px;border-left:4px solid var(--blue);border-radius:0 10px 10px 0;background:#F3F7FF;color:#35425A;font-size:13px;line-height:1.9;font-weight:600}
+    .legal-medical-note{margin-top:18px;padding:18px;border:1px solid #C9D8EF;border-radius:12px;background:#FAFCFF;color:#47566E;font-size:13px;line-height:1.9;font-weight:600}
+    .legal-code-note{margin-top:18px;padding:14px 16px;border-radius:10px;background:#F5F7FA;color:#58657A;font-size:12px;line-height:1.75;font-weight:600;word-break:break-word}
+    .legal-table-wrap{margin:18px 0 20px;overflow-x:auto;border:1px solid #CDD9EA;border-radius:12px;background:#fff}
+    .legal-table{width:100%;min-width:680px;border-collapse:collapse;font-size:13px;line-height:1.75}
+    .legal-table th{padding:13px 16px;background:#EDF4FF;color:#153260;text-align:left;font-weight:900;white-space:nowrap;border-bottom:1px solid #CDD9EA}
+    .legal-table td{padding:15px 16px;vertical-align:top;color:#344158;font-weight:500;border-bottom:1px solid #E4EAF2}
+    .legal-table tr:last-child td{border-bottom:0}
+    .legal-table th+th,.legal-table td+td{border-left:1px solid #E0E7F0}
+    .legal-table.contact-table{min-width:620px}
+    .legal-table.contact-table th{width:180px}
+    .legal-table a{color:var(--blue);text-decoration:underline;text-underline-offset:3px}
+
+    @media (max-width:900px){
+      .legal-layout{grid-template-columns:1fr}.legal-toc{display:none}.legal-mobile-toc{display:block}
+      .legal-hero-inner{padding:58px 0 46px}.legal-page{padding-top:24px}
+    }
+    @media (max-width:620px){
+      .legal-hero-inner{padding:46px 0 38px}.legal-hero h1{font-size:38px}.legal-hero p{font-size:13px;line-height:1.85}
+      .legal-mobile-toc nav{grid-template-columns:1fr}
+      .legal-document{border-radius:14px}.legal-preamble,.legal-section{padding:24px 20px}
+      .legal-section-title{font-size:19px;gap:11px}.legal-section-title .num{min-width:34px;height:34px;border-radius:9px;font-size:11px}
+      .legal-section p,.legal-section ol,.legal-section ul{font-size:13px;line-height:1.95}
+      .legal-table{font-size:12px}.legal-table th,.legal-table td{padding:12px 13px}
+    }
+
+  
+    /* Terms page additions */
+    .legal-meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+    .legal-meta span{display:inline-flex;align-items:center;padding:7px 10px;border:1px solid #D6E1F1;border-radius:999px;background:#fff;color:#647189;font-size:11px;font-weight:800}
+    .legal-section .note-inline{display:block;margin-top:8px;padding:12px 14px;border-radius:9px;background:#F5F8FD;color:#58667C;font-size:12px;line-height:1.8;font-weight:600}
+    .legal-section .table-wrap{margin:18px 0 20px;overflow-x:auto;border:1px solid #CDD9EA;border-radius:12px;background:#fff}
+    .legal-toc nav{max-height:calc(100vh - 150px);overflow-y:auto;scrollbar-width:thin}
+    .legal-section a{color:var(--blue);text-decoration:underline;text-underline-offset:3px}
+
+  
+
+    /* mobile width and table layout fixes */
+    html,body{max-width:100%;overflow-x:hidden}
+    img,svg{max-width:100%;height:auto}
+    .container,.section-shell,.legal-layout,.legal-document,.legal-preamble,.legal-section,.section-card,.footer-grid,.footer-mobile-grid,.footer-bottom{min-width:0;max-width:100%}
+    .legal-preamble p,.legal-section p,.legal-section li,.legal-section td,.legal-section th,.legal-section a,.footer p,.footer a,.medical,.copy{overflow-wrap:anywhere;word-break:normal}
+    .legal-table-wrap,.legal-section .table-wrap{width:100%;max-width:100%;overflow-x:auto;overflow-y:hidden;-webkit-overflow-scrolling:touch}
+
+    @media (max-width:620px){
+      .container,.section-shell{padding-left:14px!important;padding-right:14px!important}
+      .legal-page{padding-top:20px}
+      .legal-hero-inner{padding:42px 0 34px!important}
+      .legal-hero h1{font-size:32px!important;line-height:1.25}
+      .legal-hero p{font-size:13px!important;line-height:1.8}
+      .legal-document{width:100%;border-radius:14px}
+      .legal-preamble,.legal-section{padding:22px 16px!important}
+      .legal-section-title{font-size:18px!important;line-height:1.45;gap:10px}
+      .legal-section p,.legal-section ol,.legal-section ul,.legal-preamble p{font-size:13px!important;line-height:1.9}
+      .legal-section ol,.legal-section ul{padding-left:1.25em}
+      .legal-mobile-toc{margin-bottom:14px}
+      .legal-mobile-toc summary{padding:14px 16px}
+      .legal-mobile-toc a{font-size:12px}
+
+      /* Standard two-column tables remain true tables and fit the screen. */
+      .legal-table:not(.wide-table):not(.contact-table):not(.tokusho-table){
+        width:100%!important;min-width:0!important;table-layout:fixed;font-size:12px!important;line-height:1.7
+      }
+      .legal-table:not(.wide-table):not(.contact-table):not(.tokusho-table) th,
+      .legal-table:not(.wide-table):not(.contact-table):not(.tokusho-table) td{
+        display:table-cell!important;width:auto!important;min-width:0!important;padding:11px 10px!important;white-space:normal!important;overflow-wrap:anywhere;word-break:break-word
+      }
+      .legal-table:not(.wide-table):not(.contact-table):not(.tokusho-table) th:first-child,
+      .legal-table:not(.wide-table):not(.contact-table):not(.tokusho-table) td:first-child{width:34%}
+
+      /* Three-column tables scroll only inside their own frame. */
+      .legal-table-wrap:has(.wide-table){overflow-x:auto}
+      .legal-table.wide-table{width:620px!important;min-width:620px!important;font-size:12px!important}
+      .legal-table.wide-table th,.legal-table.wide-table td{padding:11px 10px!important;white-space:normal!important}
+
+      /* Contact and legal disclosure tables become readable stacked cards. */
+      .legal-table.contact-table,
+      .legal-table.tokusho-table,
+      .legal-table.contact-table tbody,
+      .legal-table.tokusho-table tbody,
+      .legal-table.contact-table tr,
+      .legal-table.tokusho-table tr,
+      .legal-table.contact-table th,
+      .legal-table.tokusho-table th,
+      .legal-table.contact-table td,
+      .legal-table.tokusho-table td{
+        display:block;width:100%!important;min-width:0!important
+      }
+      .legal-table.contact-table,
+      .legal-table.tokusho-table{border-collapse:separate;border-spacing:0;font-size:12px!important}
+      .legal-table.tokusho-table thead{display:none}
+      .legal-table.contact-table tr,
+      .legal-table.tokusho-table tbody tr{border-bottom:1px solid #DCE5F1}
+      .legal-table.contact-table tr:last-child,
+      .legal-table.tokusho-table tbody tr:last-child{border-bottom:0}
+      .legal-table.contact-table th,
+      .legal-table.tokusho-table tbody td:first-child{
+        padding:12px 13px 7px!important;background:#EDF4FF;color:#153260;font-weight:900;border:0!important;white-space:normal!important
+      }
+      .legal-table.contact-table td,
+      .legal-table.tokusho-table tbody td:last-child{
+        padding:0 13px 13px!important;background:#fff;color:#344158;border:0!important;white-space:normal!important;overflow-wrap:anywhere
+      }
+      .legal-table.contact-table th+th,.legal-table.contact-table td+td,
+      .legal-table.tokusho-table th+th,.legal-table.tokusho-table td+td{border-left:0!important}
+      .legal-table.contact-table th{width:100%!important}
+      .legal-table.tokusho-table td ul{padding-left:1.25em;margin-top:8px}
+
+      .footer-mobile-grid{padding:24px 16px 18px!important}
+      .footer-bottom{padding:0 16px 22px!important}
+    }
+
+  
+
+    /* final mobile containment and table alignment fixes */
+    .legal-table th,
+    .legal-table td,
+    .legal-section .table-wrap th,
+    .legal-section .table-wrap td{
+      text-align:left!important;
+    }
+
+    @media (max-width:900px){
+      .legal-layout{
+        grid-template-columns:minmax(0,1fr)!important;
+        width:100%;
+        max-width:100%;
+      }
+      .legal-layout > *{
+        min-width:0!important;
+        max-width:100%!important;
+      }
+      .legal-layout > div{
+        width:100%!important;
+      }
+    }
+
+    @media (max-width:620px){
+      html,body{
+        width:100%;
+        max-width:100%;
+        overflow-x:hidden;
+      }
+      body{margin:0}
+      .legal-page,
+      .legal-layout,
+      .legal-layout > div,
+      .legal-mobile-toc,
+      .legal-document,
+      .legal-preamble,
+      .legal-section,
+      .legal-table-wrap,
+      .legal-section .table-wrap{
+        width:100%!important;
+        max-width:100%!important;
+        min-width:0!important;
+      }
+      .legal-mobile-toc,
+      .legal-document{
+        box-sizing:border-box;
+      }
+      .legal-table-wrap,
+      .legal-section .table-wrap{
+        overflow-x:auto!important;
+        overflow-y:hidden!important;
+      }
+      .legal-table th,
+      .legal-table td,
+      .legal-section .table-wrap th,
+      .legal-section .table-wrap td{
+        text-align:left!important;
+      }
+    }
+
+  
+
+    /* table vertical alignment */
+    .legal-document table th,
+    .legal-document table td,
+    .legal-table th,
+    .legal-table td,
+    .legal-section .table-wrap th,
+    .legal-section .table-wrap td{
+      text-align:left!important;
+      vertical-align:middle!important;
+    }
+
+  </style>
+</head>
+<body id="top">
+  <header class="header"><div class="container nav"><a aria-label="Goaling ホーム" class="logo" href="index.html"><img alt="Goalingロゴ" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1NjAgMTAwIiByb2xlPSJpbWciIGFyaWEtbGFiZWxsZWRieT0idGl0bGUgZGVzYyI+CiAgPHRpdGxlIGlkPSJ0aXRsZSI+R29hbGluZyB3b3JkbWFyazwvdGl0bGU+CiAgPGRlc2MgaWQ9ImRlc2MiPlRyYW5zcGFyZW50IHdvcmRtYXJrIGxvZ28gZm9yIEdvYWxpbmcgd2l0aG91dCB0aGUgaWNvbiBtYXJrLjwvZGVzYz4KICA8dGV4dCB4PSIwIiB5PSI3MiIgZmlsbD0iIzBEMUIyQSIgZm9udC1mYW1pbHk9IkludGVyLCBBcmlhbCwgSGVsdmV0aWNhLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjcyIiBmb250LXdlaWdodD0iODAwIiBsZXR0ZXItc3BhY2luZz0iLTEiPkdvYWxpbmc8L3RleHQ+CiAgPGNpcmNsZSBjeD0iMjAxIiBjeT0iMTYiIHI9IjciIGZpbGw9IiNFNjZDMkQiLz4KPC9zdmc+"/></a><nav aria-label="グローバルナビゲーション" class="nav-links"><a href="index.html#service">サービスについて</a><a href="index.html#method">Goalingメソッド</a><a href="index.html#pricing">料金プラン</a><a href="index.html#faq">よくある質問</a></nav><a class="header-cta" href="index.html#cta">無料体験セッションを予約する</a></div></header>
+  <main>
+    <section class="legal-hero">
+      <div class="container legal-hero-inner">
+        <div class="legal-kicker">TERMS OF SERVICE</div>
+        <h1>利用規約</h1>
+        <p>Goalingのサービス内容、契約条件、料金・解約・返金保証、利用上のルールについて定めています。</p>
+        <div class="legal-breadcrumb"><a href="index.html">Goaling</a><span>／</span><span>利用規約</span></div>
+      </div>
+    </section>
+
+    <section class="legal-page">
+      <div class="container legal-layout">
+        <aside class="legal-toc" aria-label="目次">
+          <div class="legal-toc-title">目次</div>
+          <nav><a href="#article-1">第1条（サービス概要）</a><a href="#article-2">第2条（契約の成立）</a><a href="#article-3">第3条（契約期間および解約）</a><a href="#article-4">第4条（料金および支払方法）</a><a href="#article-5">第5条（返金保証）</a><a href="#article-6">第6条（サービス内容）</a><a href="#article-7">第7条（利用者の義務および推奨事項）</a><a href="#article-8">第8条（コーチの稼働範囲とオフィスアワー）</a><a href="#article-8-2">第8条の2（連休期間中のサービス提供および相談対応）</a><a href="#article-9">第9条（連続未報告時のフォローおよび連絡不能による解除）</a><a href="#article-10">第10条（禁止事項）</a><a href="#article-11">第11条（免責事項）</a><a href="#article-12">第12条（秘密保持および個人情報の取扱い）</a><a href="#article-13">第13条（反社会的勢力の排除）</a><a href="#article-14">第14条（サービス内容の変更・終了）</a><a href="#article-15">第15条（規約の変更）</a><a href="#article-16">第16条（特定商取引法に基づく表記）</a><a href="#article-17">第17条（協議事項）</a><a href="#article-18">第18条（準拠法および管轄裁判所）</a></nav>
+        </aside>
+
+        <div>
+          <details class="legal-mobile-toc">
+            <summary>目次を表示する</summary>
+            <nav><a href="#article-1">第1条（サービス概要）</a><a href="#article-2">第2条（契約の成立）</a><a href="#article-3">第3条（契約期間および解約）</a><a href="#article-4">第4条（料金および支払方法）</a><a href="#article-5">第5条（返金保証）</a><a href="#article-6">第6条（サービス内容）</a><a href="#article-7">第7条（利用者の義務および推奨事項）</a><a href="#article-8">第8条（コーチの稼働範囲とオフィスアワー）</a><a href="#article-8-2">第8条の2（連休期間中のサービス提供および相談対応）</a><a href="#article-9">第9条（連続未報告時のフォローおよび連絡不能による解除）</a><a href="#article-10">第10条（禁止事項）</a><a href="#article-11">第11条（免責事項）</a><a href="#article-12">第12条（秘密保持および個人情報の取扱い）</a><a href="#article-13">第13条（反社会的勢力の排除）</a><a href="#article-14">第14条（サービス内容の変更・終了）</a><a href="#article-15">第15条（規約の変更）</a><a href="#article-16">第16条（特定商取引法に基づく表記）</a><a href="#article-17">第17条（協議事項）</a><a href="#article-18">第18条（準拠法および管轄裁判所）</a></nav>
+          </details>
+
+          <article class="legal-document">
+            <section class="legal-preamble">
+              <h2>前文</h2>
+              <p>永田 海翔（以下「当方」といいます）が提供する肉体・健康習慣特化型の1対1アカウンタビリティ伴走サービス「Goaling（ゴーリング）」（以下「本サービス」といいます）の利用に関し、以下のとおり利用規約（以下「本規約」といいます）を定めます。本サービスの利用者（以下「利用者」といいます）は、本規約に同意のうえ、本サービスを利用するものとします。</p>
+              <div class="legal-meta"><span>制定日：2026年5月5日</span><span>最終改定日：2026年6月13日</span></div>
+            </section>
+            <section class="legal-section" id="article-1"><h2 class="legal-section-title"><span class="num">01</span><span>第1条（サービス概要）</span></h2><ol>
+<li>本サービスは、<strong>肉体・健康習慣</strong>（運動、食事、睡眠等の生活習慣）の定着を目的とし、<strong>朝晩のLINEリマインド・専用Web Appでの日次報告・月次30分の1対1振り返りセッション</strong>により行動継続を支援する<strong>1対1アカウンタビリティ伴走サービス</strong>です。</li>
+<li>本サービスは<strong>行動継続の支援（プロセスへの伴走）</strong>を目的とするものであり、<strong>特定の成果・結果（アウトカム）を保証するものではありません</strong>。</li>
+<li>本サービスは<strong>集団プログラム・期制・バディ制度を採用しません</strong>。利用者は思い立った日から個別に開始でき、他の利用者と組まされることはありません。</li>
+<li>本サービスが扱うテーマは<strong>肉体・健康習慣</strong>（運動、食事、睡眠／回復）に特化しており、これら以外（キャリア・人生相談・精神疾患・恋愛等）は対象外です。</li>
+</ol></section><section class="legal-section" id="article-2"><h2 class="legal-section-title"><span class="num">02</span><span>第2条（契約の成立）</span></h2><ol>
+<li>利用者が当方所定の申込手続および決済を完了し、当方がこれを承諾した時点で、本規約に基づくサービス利用契約（以下「本契約」といいます）が成立します。</li>
+<li>利用者は、申込時に正確かつ最新の情報を提供するものとします。</li>
+<li>当方は、以下の場合に申込を承諾しないことがあります。
+      <ul>
+<li>申込内容に虚偽がある場合</li>
+<li>過去に本規約に違反したことがある場合</li>
+<li>医師から運動制限を受けている、または精神疾患の治療中である等、本サービスの提供が適切でないと当方が判断した場合</li>
+<li>その他当方が不適切と判断した場合</li>
+</ul>
+</li>
+</ol></section><section class="legal-section" id="article-3"><h2 class="legal-section-title"><span class="num">03</span><span>第3条（契約期間および解約）</span></h2><ol>
+<li>本契約の契約形態は、利用者が選択したプラン（月額／3ヶ月一括／年間一括）に応じます。<strong>現在提供中のプランは、月額プラン、3ヶ月一括プラン、年間一括プラン、およびゼロ期生プラン</strong>です。</li>
+<li><strong>月額プラン</strong>は、契約日を起算日として1ヶ月単位で自動更新されます。利用者は、次回更新日の<strong>7日前まで</strong>に当方所定の方法で解約を申し出ることで、当該更新月の末日をもって解約できます。支払済み期間の日割返金は行いません。</li>
+<li><strong>3ヶ月一括プラン</strong>は、3ヶ月継続を前提とした割引価格のため、契約期間中の中途解約および日割返金は行いません。ただし、第5条の返金保証条件を満たす場合、当方都合によりサービス未提供期間が発生した場合、または法令上別途対応が必要な場合を除きます。</li>
+<li><strong>年間一括プラン</strong>は、契約期間中でも当方所定の方法により中途解約を申し出ることができます。この場合、支払済みの年間料金から、月額通常料金9,800円に利用月数（解約申請を受理した月を含みます）を乗じた金額を差し引いた残額を返金します。返金額が0円以下となる場合、返金は行いません。</li>
+<li>プランの中途変更（月額→3ヶ月一括、3ヶ月一括→年間一括等）は、次回更新日に切り替えるものとします。</li>
+<li>解約後も、既に発生した利用料金の支払義務は消滅しません。</li>
+</ol></section><section class="legal-section" id="article-4"><h2 class="legal-section-title"><span class="num">04</span><span>第4条（料金および支払方法）</span></h2><ol>
+<li>本サービスの利用料金は、申込時点で当方が提示するプランによります。<strong>現在、以下のプランを提供しています。</strong>
+<ul>
+<li><strong>月額プラン</strong>：月額<strong>9,800円（税込）</strong></li>
+<li><strong>3ヶ月一括プラン</strong>：<strong>26,400円（税込・3ヶ月分一括前払い／1ヶ月あたり8,800円相当）</strong></li>
+<li><strong>年間一括プラン</strong>：<strong>88,000円（税込・12ヶ月分一括前払い／1ヶ月あたり約7,333円相当）</strong></li>
+<li><strong>ゼロ期生プラン</strong>（立ち上げ期限定）：<strong>初月のみ4,900円（税込）</strong>。2ヶ月目以降は月額9,800円（税込）。</li>
+</ul>
+</li>
+<li>ゼロ期生プランは<strong>先着5名限定</strong>とし、サービス改善のためのレビュー・ヒアリングへのご協力をお願いするプランです。ビフォーアフター写真その他の素材の提出、および当方による紹介・公開での利用は<strong>任意</strong>であり、別途明示の同意をいただいた場合に限ります。</li>
+<li>支払方法は、当方が指定する以下のいずれかによるものとします。
+      <ul>
+<li>クレジットカード決済（会費ペイ等の決済代行）</li>
+<li>銀行振込（振込手数料は利用者負担）</li>
+</ul>
+</li>
+<li>月額プランの利用料金は、契約開始日（または更新日）を起算日として毎月前払いとします。3ヶ月一括プランおよび年間一括プランは、契約時に一括前払いとします。</li>
+<li>当方が指定する支払期日までに入金が確認できない場合、当方はサービスの提供を一時停止できるものとします。</li>
+</ol></section><section class="legal-section" id="article-5"><h2 class="legal-section-title"><span class="num">05</span><span>第5条（返金保証）</span></h2><ol>
+<li>本条は、<strong>月額プラン、3ヶ月一括プランまたは年間一括プランを新規に契約した利用者</strong>に適用される、当方独自の条件付き返金保証です。<strong>ゼロ期生プランには適用されません</strong>。</li>
+<li>利用者は、以下の<strong>全条件</strong>を満たした場合に限り、<strong>初回決済額</strong>（月額プランは初月利用料、一括プランは一括前払額）の全額返金を請求できるものとします。
+      <ul>
+<li>契約開始日から<strong>14日以内</strong>（かつ初回オンボーディングセッション実施後14日以内の早い方）に、メールまたはLINEで申請していること</li>
+<li><strong>初回オンボーディングセッション（45分・1対1）に参加済み</strong>であること</li>
+<li>契約開始日からの<strong>日次報告を7日以上提出</strong>していること</li>
+<li>過去に本返金保証を利用していないこと</li>
+</ul>
+</li>
+<li>前項の条件を満たさない場合、返金には応じかねます。</li>
+<li>返金は、申請受理後14営業日以内に、原則として元の決済手段への返金、または利用者が指定する銀行口座への振込により行います（振込手数料は当方負担）。</li>
+<li>返金保証の利用は1人1回限りとし、再契約時には適用されません。</li>
+<li><strong>結果ベースの返金保証（成果未達による返金）は設定しません</strong>。本サービスはプロセス（行動継続）への伴走であり、結果の保証は行わないためです。</li>
+<li>本サービスは、利用者ご自身が当方のWebページ等から申し込む通信販売を前提としています。販売方法その他の事情により法定のクーリング・オフその他の規制が適用される場合は、当該法令が優先します。本条は、これらの法令上の権利を制限するものではなく、通信販売における当方独自の返金保証を定めるものです。</li>
+</ol></section><section class="legal-section" id="article-6"><h2 class="legal-section-title"><span class="num">06</span><span>第6条（サービス内容）</span></h2><ol>
+<li>本サービスは以下の4つの提供価値で構成されます。
+      <div class="legal-table-wrap">
+<table class="legal-table">
+<thead><tr><th>提供価値</th><th>内容</th></tr></thead>
+<tbody>
+<tr><td>① 朝晩のLINEリマインド</td><td>朝（デフォルト7:00）に目標設定、夜（デフォルト22:00）に達成度報告を促すLINE通知。配信時刻・配信頻度（朝のみ／夜のみ／両方／オフ）はオンボーディングおよび設定画面から変更可能。</td></tr>
+<tr><td>② 専用Web App（進捗ダッシュボード機能）</td><td>朝の3目標設定、夜の○／△／×報告、過去7日／月次／全期間の進捗振り返り。LINE LIFFまたはURLパラメータ認証でログイン不要。</td></tr>
+<tr><td>③ 月次30分の1対1セッション</td><td>月1回のGoogle Meetによる振り返りと翌月のターゲット再設定。長文相談はこの30分内に集約。</td></tr>
+<tr><td>④ Discordコミュニティ（任意）</td><td>wins共有・Tips交換・雑談を行う任意参加のコミュニティ。参加・不参加は自由で、契約内容に影響しません。</td></tr>
+</tbody>
+</table>
+</div>
+</li>
+<li><strong>初回オンボーディングセッション</strong>：入会確定後、運用開始前に45分のGoogle Meetによる1対1セッションを実施し、3ヶ月後の理想像、プロセス目標、アウトカム目標、初期3目標、リマインド時刻、写真提出の有無・頻度（任意）を確定します。</li>
+<li><strong>追加の個別1on1セッションは本サービスの利用料金に含まれません</strong>。月次セッション以外の同期コミュニケーションは、当方が将来的に有料オプションを提供開始した場合に限り、当該オプションの条件に従って提供します。現時点で追加1on1セッションの提供は保証されません。</li>
+<li><strong>長文の相談・キャリア相談・人生相談・価値観の深掘り等</strong>は、本サービスの提供範囲外です。月次30分の中で扱える範囲を超える場合、当方の別サービス「MensCore」（別契約）の候補としてフラグ化することがあります。</li>
+</ol></section><section class="legal-section" id="article-7"><h2 class="legal-section-title"><span class="num">07</span><span>第7条（利用者の義務および推奨事項）</span></h2><ol>
+<li>利用者は、初回オンボーディングセッションで設定した<strong>プロセス目標</strong>（推奨基準）に向けて、誠実に取り組むよう努めるものとします。
+      <ul>
+<li>30日のうち<strong>24日（80%）以上</strong>の日次報告</li>
+<li>月1回の<strong>月次セッションへの出席</strong></li>
+<li>設定した日次目標の<strong>80%以上の達成</strong></li>
+</ul>
+<p class="note-inline">※ プロセス目標は契約上の絶対義務ではなく、サービス価値を享受するための<strong>推奨基準</strong>です。</p>
+</li>
+<li>利用者は、以下を遵守するものとします。
+      <ul>
+<li>設定された日次目標を朝に確認し、夜（22:00目安）までに専用Web Appにて達成度（○／△／×）を報告すること</li>
+<li>月次セッションには原則として出席すること（やむを得ず欠席する場合は事前連絡）</li>
+<li>自己の健康状態に十分留意し、体調不良時は無理をしないこと</li>
+</ul>
+</li>
+<li><strong>写真エビデンス（ジムセルフィー、食事写真等）の提出は任意</strong>であり、強制はしません。</li>
+<li>利用者は、本サービスの利用にあたり、<strong>自己の責任において行動</strong>するものとし、医療上のリスクが疑われる行動（過度なダイエット、無理なトレーニング等）は、必ず医師・専門家に相談してください。</li>
+</ol></section><section class="legal-section" id="article-8"><h2 class="legal-section-title"><span class="num">08</span><span>第8条（コーチの稼働範囲とオフィスアワー）</span></h2><ol>
+<li>利用者から当方（コーチ）への問い合わせ・報告に対する<strong>初回返信は、原則として24時間以内</strong>に行うよう努めます。ただし、夜間・深夜・休日の到着分は翌オフィスアワー以降の返信となる場合があります。</li>
+<li><strong>重点回答時間（コアタイム）</strong>として、以下を設定します。この時間帯にコーチが集中的にフィードバックを実施します。
+      <ul>
+<li><strong>平日21:00〜23:00</strong>（夜の報告に対する翌朝までの返信を含む）</li>
+<li>土日も対応しますが、平日比でやや遅延する場合があります。</li>
+</ul>
+</li>
+<li>緊急時を除き、<strong>深夜帯（23:00〜翌7:00）の即時返信は行いません</strong>。</li>
+<li>コーチからの返信は、<strong>短文・定型・スタンプ中心</strong>とし、長文の個別カウンセリングは行いません。</li>
+<li>個別の長時間相談・キャリア相談・人生相談は、<strong>月次30分セッション内</strong>に集約します。</li>
+</ol></section><section class="legal-section" id="article-8-2"><h2 class="legal-section-title"><span class="num">8-2</span><span>第8条の2（連休期間中のサービス提供および相談対応）</span></h2><p>本条は、適用法令に基づく利用者の権利を制限するものではなく、本条と法令が抵触する場合は法令が優先します。</p><ol>
+<li><strong>対象連休</strong>：本条において「連休期間」とは、以下の運営休業期間をいいます。当方は各連休期間の開始前に、第4項に定める方法で休業期間を事前に告知します。
+      <ul>
+<li><strong>ゴールデンウィーク</strong>：4月29日〜5月5日を含む3連休以上の期間（暦に準拠し、最大9連休まで）</li>
+<li><strong>お盆</strong>：原則として8月12日〜8月18日（社会通念上の休業期間として当方の運営判断により設定）</li>
+<li><strong>年末年始</strong>：原則として12月28日〜翌1月5日</li>
+<li><strong>その他</strong>：3連休以上の国民の祝日が連続する期間（暦に準拠）</li>
+</ul>
+</li>
+<li><strong>連休期間中の相談対応の目安（通常相談に限る）</strong>：連休期間中に当方が受領した<strong>通常相談</strong>（仕様確認・機能要望・運用ルールの質問・リマインド時刻変更・目標set-once解除依頼等）は、<strong>連休明け最初の平日オフィスアワー（原則21:00 JST）を起点</strong>として、第8条に定める通常の対応目安（着手から最大24時間以内の完了を目安）を適用します。連休期間中の日は、対応目安日数の計算（営業日カウント）から除外します。本項は、法令上のクーリングオフ・解約・退会・休会の申出（第6項）、決済・課金エラー、システム障害、医療緊急、個人情報に関する請求（第7項）には適用しません。
+      <ul>
+<li>本項は当方の損害賠償責任、利用者の解除権その他の法令上の権利を制限するものではありません。</li>
+<li>当方が第4項の事前告知を行わずに休業した場合、または本項の対応目安を超過した場合は、合理的な範囲で利用期間の延長、日割相当額の控除その他の補償を行います。</li>
+<li>本条は、本規約改訂日以降に開始または更新される契約に適用し、既存契約者に不利益となる遡及適用は行いません。</li>
+</ul>
+</li>
+<li><strong>連休期間中も継続する機能</strong>：連休期間中であっても、以下の自動機能は継続します。
+      <ul>
+<li>朝晩のLINEリマインドの自動配信</li>
+<li>専用Web App（LIFF）での日次報告入力</li>
+<li>連続未報告フォロー等の自動応答LINE</li>
+</ul>
+</li>
+<li><strong>事前告知</strong>：当方は、各連休期間の開始前（目安として10日前および3日前の2段階）に、LINE一斉配信・専用Web App（LIFF）のお知らせ・「運営に相談」窓口の自動応答等の方法により、休業期間および相談対応の遅延を事前に告知します。本条による相談対応の遅延は、当該事前告知を前提とする合理的な範囲のものとします。</li>
+<li><strong>連休期間中の例外（即時対応）</strong>：第8条第3項および前各項にかかわらず、以下は連休期間中であっても可能な限り速やかに対応します。
+      <ul>
+<li><strong>システム障害</strong>：専用Web App（LIFF）の全面停止、LINEの応答不能、決済・課金エラー等</li>
+<li><strong>緊急の相談</strong>：利用者がLINEに「緊急」と明記した解約・決済トラブル等（連休中は一次返信・トリアージ判断を優先し、実作業は連休明けとなる場合があります）</li>
+<li><strong>体調・医療・メンタルの緊急時</strong>：当方は本サービスの対象外として外部の医療機関・専門相談窓口への案内のみを行います（連休中も自動応答により案内します）</li>
+</ul>
+</li>
+<li><strong>クーリングオフ・解約申出の連休中受領</strong>：法令上のクーリングオフその他の解約・退会・休会の申出は、LINE・電子メールその他当方所定の電磁的方法による申出を、書面に準ずる電磁的方法による受領として、連休期間中であっても受領処理します。当方は、申出を受領した場合、遅滞なく受付確認を返信します。<strong>法令上のクーリングオフまたは申込みの撤回が適用される場合、その期間・起算日・通知方法および効力発生時期は当該法令に従い、当方の連休休業によって中断・短縮・延長されません。</strong>当該期間内の申出は、連休期間中であっても効力を生じます。本項は前各項の対応目安に優先します。</li>
+<li><strong>個人情報に関する請求の連休中対応</strong>：個人情報の開示・訂正・追加・削除・利用停止・第三者提供の停止の請求、ならびに個人情報の漏えい等またはそのおそれへの対応は、本条の連休時の取扱いの対象外とし、法令および当方プライバシーポリシーに従い、連休期間中であっても遅滞なく対応します。</li>
+</ol></section><section class="legal-section" id="article-9"><h2 class="legal-section-title"><span class="num">09</span><span>第9条（連続未報告時のフォローおよび連絡不能による解除）</span></h2><ol>
+<li>利用者の日次報告が一定期間途切れた場合、当方は以下の段階的フォローを行います。本条のフォローおよび解除は、第7条に定める推奨基準（80%以上の報告率等）の未達それ自体を理由とするものではなく、利用者と当方との間で連絡が取れない状態が継続したことを要件とします。
+      <div class="legal-table-wrap">
+<table class="legal-table">
+<thead><tr><th>期間</th><th>対応</th></tr></thead>
+<tbody>
+<tr><td>連続2日未報告</td><td>自動LINEメッセージによるやわらかいフォロー</td></tr>
+<tr><td>連続3日未報告</td><td>コーチからの個別声かけ</td></tr>
+<tr><td>連続7日未報告</td><td>コーチからGoogle Meet（短時間）の打診</td></tr>
+<tr><td>連続14日未報告</td><td>一時停止または解約の選択肢を提示</td></tr>
+</tbody>
+</table>
+</div>
+</li>
+<li>上記フォロー後も連続21日以上の未報告が継続し、かつ当方からのLINE・メール等による複数回の連絡に対して利用者から応答がなく、連絡不能と認められる場合に限り、当方は本契約を解除できるものとします。当方は、解除に先立ち、相当の回答期限（7日以上）を定めて契約解除の予告を通知します。日次報告が途切れていても、利用者から事情の連絡があり一時停止等の取扱いが合意されている場合は、本項の連絡不能には該当しません。</li>
+<li>前項による契約解除は、利用者の達成度・成果の不足を理由とするものではなく、本サービスの提供に必要な双方向のコミュニケーションが成立しないことを理由とするものです。</li>
+<li>本条による契約解除の場合、既に提供済みの期間に対応する利用料金の返金は行いません。前払いを受けており、かつ未提供期間に対応する金額がある場合は、決済取消手数料その他の実費相当額を控除した残額を返金します。第5条の返金保証条件を満たす場合、または利用者が第5条所定の方法で返金申請を行っている期間中（この場合は本条にいう連絡不能には該当しません）は、同条によります。<strong>本条は、利用料金の没収を目的とするものではなく、未報告それ自体を違約金事由とするものではありません。</strong></li>
+<li>一時停止については、当方が認めた事情（疾病、長期出張等）に限り、最大2ヶ月を上限として対応する場合があります。一時停止期間中は利用料金の請求を停止します（既払い分は再開後の利用に充当されます）。</li>
+</ol></section><section class="legal-section" id="article-10"><h2 class="legal-section-title"><span class="num">10</span><span>第10条（禁止事項）</span></h2><p>利用者は、本サービスの利用にあたり、以下の行為を行ってはなりません。</p><ol>
+<li>虚偽の情報を申告する行為</li>
+<li>当方または第三者の権利を侵害する行為</li>
+<li>本サービスで提供されたコンテンツ（ワーク、テンプレート、レポート、Web App等）を当方の許可なく複製・転載・販売する行為</li>
+<li>他の利用者の個人情報を収集・蓄積・開示する行為</li>
+<li>Discordコミュニティ等において、他の利用者またはコーチに対する暴言、誹謗中傷、ハラスメント、勧誘、宣伝等を行う行為</li>
+<li>コーチに対して、深夜帯の即時返信を強要する、過度な個別対応を要求する等、サービス提供範囲を逸脱した行為</li>
+<li>当方のサービス運営を妨害する行為</li>
+<li>本サービスを反社会的目的で利用する行為</li>
+<li>法令または公序良俗に反する行為</li>
+<li>その他、当方が不適切と判断する行為</li>
+</ol></section><section class="legal-section" id="article-11"><h2 class="legal-section-title"><span class="num">11</span><span>第11条（免責事項）</span></h2><ol>
+<li><strong>本サービスは特定の成果・結果を保証するものではなく、行動継続の支援（プロセスへの伴走）を目的としています。</strong>利用者が設定した目標の達成は、利用者自身の行動の総和に依存します。なお、本項は、当方の故意または過失により利用者に生じた損害について、当方の責任を免除するものではありません。</li>
+<li><strong>本サービスは医療行為、栄養指導、診断、治療、心理療法またはカウンセリングではありません。</strong>身体的・精神的な健康上の問題については、必ず医師・専門家に相談してください。</li>
+<li>食事やサプリメントに関する報告を扱う場合であっても、あくまで「報告の習慣化支援」として位置づけられるものであり、<strong>専門的な栄養指導・食事指導には該当しません</strong>。</li>
+<li><strong>トレーニングメニューの作成・指導は本サービスの提供範囲外です</strong>。具体的なトレーニング内容は利用者自身がジムのトレーナー、書籍、動画等で習得するものとします。</li>
+<li>Discordコミュニティ等における利用者間のやり取りに起因するトラブルについて、当方は仲介の努力を行いますが、最終的な責任は利用者間で解決するものとします。</li>
+<li>当方は、本サービスの提供において、天災・通信障害・LINE Messaging APIの障害・Google Workspaceの障害等の不可抗力により生じた損害について責任を負いません。</li>
+<li>当方は、利用者が本サービスの利用に関連して被った損害について、当方の故意または重大な過失による場合を除き、現実に発生した通常かつ直接の損害に限り、かつ損害発生日から遡って直近6ヶ月間に利用者が当方に支払った利用料金の総額または金3万円のいずれか高い額を上限として賠償するものとします。当方の故意または重大な過失による場合は、本項の損害範囲の限定および上限額は適用しません。</li>
+</ol></section><section class="legal-section" id="article-12"><h2 class="legal-section-title"><span class="num">12</span><span>第12条（秘密保持および個人情報の取扱い）</span></h2><ol>
+<li>当方は、本サービスの提供を通じて取得した利用者の個人情報を、個人情報の保護に関する法律その他の関連法令に従い、適切に管理・保護します。詳細は別途定めるプライバシーポリシーによります。</li>
+<li>当方は、利用者の個人情報を以下の目的でのみ使用します。
+      <ul>
+<li>本サービスの提供・運営（リマインド配信、進捗管理、月次セッション運営等）</li>
+<li>サービス改善のための分析（個人を特定しない形での集計分析を含む）</li>
+<li>利用者への連絡・案内</li>
+</ul>
+</li>
+<li>当方は、利用者の事前の同意なく、個人情報を第三者に提供しません。ただし、法令に基づく場合および本サービスの運営上必要な業務委託先（決済代行、Google、LINE等）への提供を除きます。</li>
+<li>利用者のサービス利用事例（ビフォーアフター写真、感想等）を、当方のウェブサイト・SNS・広告等で紹介する場合は、<strong>事前に利用者本人の同意を得る</strong>ものとします。匿名化の要否は利用者の意向に従います。</li>
+<li>利用者は、Discordコミュニティ等で知り得た他の利用者の個人情報やプライバシーに関する情報を、第三者に開示・公開しないものとします。</li>
+<li>利用者は、当方から提供されたフィードバック内容、Web App画面、テンプレート等を、当方の許可なく第三者に開示・公開しないものとします。</li>
+</ol></section><section class="legal-section" id="article-13"><h2 class="legal-section-title"><span class="num">13</span><span>第13条（反社会的勢力の排除）</span></h2><ol>
+<li>利用者は、自らが暴力団、暴力団員、暴力団準構成員、暴力団関係企業、総会屋、社会運動等標ぼうゴロ、特殊知能暴力集団その他これに準ずる者（以下「反社会的勢力」といいます）に該当しないこと、および反社会的勢力と社会的に非難されるべき関係を有していないことを表明し保証します。</li>
+<li>当方は、利用者が前項に違反した場合、催告なしに直ちに本契約を解除できるものとし、これにより利用者に損害が生じても当方は一切の賠償責任を負いません。</li>
+</ol></section><section class="legal-section" id="article-14"><h2 class="legal-section-title"><span class="num">14</span><span>第14条（サービス内容の変更・終了）</span></h2><ol>
+<li>当方は、利用者に事前に通知したうえで、本サービスの内容（リマインド時刻のデフォルト、Web Appの仕様、月次セッションの形式等）を変更することがあります。</li>
+<li>当方は、やむを得ない事由がある場合、本サービスの全部または一部を終了することがあります。この場合、当方は30日前までに利用者に通知するものとし、未提供期間に相当する利用料金を返金します。</li>
+</ol></section><section class="legal-section" id="article-15"><h2 class="legal-section-title"><span class="num">15</span><span>第15条（規約の変更）</span></h2><ol>
+<li>当方は、民法その他の法令に従い、本規約の変更が利用者の一般の利益に適合する場合、または変更の必要性・相当性等に照らして合理的である場合に、本規約を変更することができます。</li>
+<li>規約変更の際は、変更内容および効力発生日を、効力発生日の<strong>14日前まで</strong>に、本サービス上の掲示またはLINE等の方法により利用者に通知します。</li>
+<li>前項の通知後、利用者が本サービスの利用を継続した場合、変更後の本規約に同意したものとみなします。</li>
+</ol></section><section class="legal-section" id="article-16"><h2 class="legal-section-title"><span class="num">16</span><span>第16条（特定商取引法に基づく表記）</span></h2><p>本サービスの特定商取引法に基づく表記については、別途掲載の「<a href="tokushoho.html">特定商取引法に基づく表記</a>」に定めるとおりとします。</p></section><section class="legal-section" id="article-17"><h2 class="legal-section-title"><span class="num">17</span><span>第17条（協議事項）</span></h2><p>本規約に定めのない事項、または本規約の解釈に疑義が生じた場合は、当方と利用者の間で誠意をもって協議のうえ、解決するものとします。</p></section><section class="legal-section" id="article-18"><h2 class="legal-section-title"><span class="num">18</span><span>第18条（準拠法および管轄裁判所）</span></h2><ol>
+<li>本規約は日本法に準拠し、日本法に従って解釈されるものとします。</li>
+<li>本規約に関する紛争については、法令上認められる範囲で、<strong>東京簡易裁判所または東京地方裁判所</strong>を第一審の合意管轄裁判所とします。</li>
+</ol></section>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="section-shell footer"><div class="section-card"><div class="footer-grid footer-desktop"><div class="footer-brand"><div class="footer-logo"><img alt="Goalingロゴ" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1NjAgMTAwIiByb2xlPSJpbWciIGFyaWEtbGFiZWxsZWRieT0idGl0bGUgZGVzYyI+CiAgPHRpdGxlIGlkPSJ0aXRsZSI+R29hbGluZyB3b3JkbWFyazwvdGl0bGU+CiAgPGRlc2MgaWQ9ImRlc2MiPlRyYW5zcGFyZW50IHdvcmRtYXJrIGxvZ28gZm9yIEdvYWxpbmcgd2l0aG91dCB0aGUgaWNvbiBtYXJrLjwvZGVzYz4KICA8dGV4dCB4PSIwIiB5PSI3MiIgZmlsbD0iIzBEMUIyQSIgZm9udC1mYW1pbHk9IkludGVyLCBBcmlhbCwgSGVsdmV0aWNhLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjcyIiBmb250LXdlaWdodD0iODAwIiBsZXR0ZXItc3BhY2luZz0iLTEiPkdvYWxpbmc8L3RleHQ+CiAgPGNpcmNsZSBjeD0iMjAxIiBjeT0iMTYiIHI9IjciIGZpbGw9IiNFNjZDMkQiLz4KPC9zdmc+"/></div><p class="footer-tagline">「続ける」を仕組み化する。</p></div><div><h4>サービスについて</h4><p><a href="index.html#service">サービスについて</a><br/><a href="index.html#method">Goalingメソッド</a><br/><a href="index.html#pricing">料金プラン</a></p></div><div><h4>よくある質問</h4><p><a href="index.html#faq">よくある質問</a></p></div><div><h4>各種ポリシー</h4><p><a href="tokushoho.html">特定商取引法に基づく表記</a><br/><a href="goaling_privacy_policy.html">プライバシーポリシー</a><br/><a href="#top" aria-current="page">利用規約</a></p></div></div><div class="footer-mobile"><div class="footer-mobile-grid"><div class="footer-brand"><div class="footer-logo"><img alt="Goalingロゴ" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1NjAgMTAwIiByb2xlPSJpbWciIGFyaWEtbGFiZWxsZWRieT0idGl0bGUgZGVzYyI+CiAgPHRpdGxlIGlkPSJ0aXRsZSI+R29hbGluZyB3b3JkbWFyazwvdGl0bGU+CiAgPGRlc2MgaWQ9ImRlc2MiPlRyYW5zcGFyZW50IHdvcmRtYXJrIGxvZ28gZm9yIEdvYWxpbmcgd2l0aG91dCB0aGUgaWNvbiBtYXJrLjwvZGVzYz4KICA8dGV4dCB4PSIwIiB5PSI3MiIgZmlsbD0iIzBEMUIyQSIgZm9udC1mYW1pbHk9IkludGVyLCBBcmlhbCwgSGVsdmV0aWNhLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjcyIiBmb250LXdlaWdodD0iODAwIiBsZXR0ZXItc3BhY2luZz0iLTEiPkdvYWxpbmc8L3RleHQ+CiAgPGNpcmNsZSBjeD0iMjAxIiBjeT0iMTYiIHI9IjciIGZpbGw9IiNFNjZDMkQiLz4KPC9zdmc+"/></div><p class="footer-tagline">「続ける」を仕組み化する。</p></div><nav aria-label="フッターナビゲーション" class="footer-nav"><a class="footer-nav-item" href="index.html"><span>Top</span><span class="arrow">→</span></a><a class="footer-nav-item" href="index.html#method"><span>Goalingメソッド</span><span class="arrow">→</span></a><a class="footer-nav-item" href="index.html#pricing"><span>料金プラン</span><span class="arrow">→</span></a><a class="footer-nav-item" href="index.html#faq"><span>よくある質問</span><span class="arrow">→</span></a><a class="footer-nav-item" href="tokushoho.html"><span>特定商取引法に基づく表記</span><span class="arrow">→</span></a><a class="footer-nav-item" href="goaling_privacy_policy.html"><span>プライバシーポリシー</span><span class="arrow">→</span></a><a aria-current="page" class="footer-nav-item" href="#top"><span>利用規約</span><span class="arrow">→</span></a></nav></div></div><div class="footer-bottom"><div class="medical">医療免責：Goalingは医療行為を提供するものではありません。成果には個人差があり、結果を保証するものではありません。</div><div class="copy">© 2026 Goaling. All rights reserved.</div></div></div></footer>
+</body>
+</html>

@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>特定商取引法に基づく表記｜Goaling</title>
+  <meta name="description" content="Goalingの販売条件、料金、支払方法、解約・返金条件等について定める特定商取引法に基づく表記です。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+JP:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --blue:#0347D8; --blue-2:#0A5BFF; --blue-3:#EAF2FF; --navy:#07152F; --ink:#081225; --muted:#6D778A; --line:#DCE4F0; --white:#FFF; --green:#06C755; --green-2:#078946; --max:1240px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:'Inter','Noto Sans JP',system-ui,-apple-system,BlinkMacSystemFont,sans-serif;color:var(--ink);background:linear-gradient(180deg,#fff 0%,#F8FBFF 100%);letter-spacing:.01em}
+    a{text-decoration:none;color:inherit} img{display:block;max-width:100%}
+    .container{max-width:var(--max);margin:0 auto;padding:0 24px}
+    .section-shell{max-width:var(--max);margin:0 auto;padding:0 24px 28px}
+    .section-card{background:#fff;border:1px solid var(--line);border-radius:24px;overflow:hidden;box-shadow:0 8px 30px rgba(6,24,54,.04)}
+    .mobile-only{display:none!important}
+
+    .feature-section{padding-top:34px;}
+    .feature-section .section-card{padding:28px 30px 30px;}
+    .feature-section .section-head{padding:0 0 18px;}
+    .feature-section .feature-panels{padding:0;}
+    .feature-section .section-sub{max-width:660px;}
+    .cta-right{display:flex;align-items:center;height:100%}.cta-main{display:flex;flex-direction:column;align-items:flex-start}.cta-main .cta-buttons{width:100%}.cta-main .cta-buttons .btn{width:100%;justify-content:center}.cta-points{display:grid;grid-template-columns:1fr;gap:14px;margin-top:0;width:100%;align-content:center;}
+    .cta-point{text-align:left;display:flex;align-items:center;min-height:78px;padding:18px 18px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.16);}
+    .line-icon{width:18px;height:18px;object-fit:contain;flex:0 0 auto}
+
+    .header{position:sticky;top:0;z-index:40;background:rgba(255,255,255,.88);backdrop-filter:blur(18px);border-bottom:1px solid rgba(220,228,240,.85)}
+    .nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .logo{display:inline-flex;align-items:center;color:var(--navy)} .logo img{height:34px;width:auto;display:block;background:transparent}
+    .nav-links{display:flex;align-items:center;gap:34px;font-size:13px;font-weight:800;color:#0E1932}
+    .header-cta{display:inline-flex;align-items:center;gap:8px;padding:11px 16px;border:1px solid var(--blue);border-radius:10px;font-size:13px;font-weight:800;background:var(--blue);color:#fff;white-space:nowrap;box-shadow:0 10px 24px rgba(3,71,216,.18)}
+
+    .hero{position:relative;overflow:hidden;background:#fff;border-bottom:1px solid var(--line)}
+    .hero:before{content:'';position:absolute;right:-110px;top:-130px;width:640px;height:590px;background:linear-gradient(135deg,#B7D7FF 0%,#5C9CFF 58%,#2E74ED 100%);clip-path:polygon(28% 0,100% 0,100% 62%,52% 100%,0 42%);opacity:.75}
+    .hero:after{content:'';position:absolute;right:128px;top:205px;width:360px;height:230px;background-image:radial-gradient(#2F7CFF 1px,transparent 1px);background-size:15px 15px;opacity:.22;transform:rotate(-2deg)}
+    .hero-inner{position:relative;z-index:2;display:grid;grid-template-columns:1fr 1.08fr;gap:44px;align-items:center;padding:74px 0 42px}
+    h1{font-size:clamp(48px,4.9vw,76px);line-height:1.1;letter-spacing:-.075em;margin:0 0 14px;font-weight:900} h1 .blue{color:var(--blue)}
+    .lead{font-size:20px;line-height:1.85;font-weight:700;color:#18233A;margin:0 0 14px} .desc{font-size:16px;line-height:1.85;color:#2E3A52;margin:0 0 28px;font-weight:500}
+    .actions{display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:18px 28px;border-radius:8px;font-size:15px;font-weight:900;border:1px solid transparent;transition:.2s ease} .btn:hover{transform:translateY(-1px)}
+    .btn-blue{background:var(--blue);color:#fff;box-shadow:0 18px 35px rgba(3,71,216,.22)} .btn-line{background:#fff;color:#06142E;border-color:#11A653} .hero-actions{align-items:stretch}.hero-actions .btn{justify-content:center}
+
+    .hero-phones{display:flex;align-items:flex-end;justify-content:center;gap:18px;min-height:490px} .hero-phone-mobile{display:none;justify-content:center;align-items:center;margin:20px auto 18px;width:100%}
+    .hero-device-wrap{width:216px;flex:0 0 auto;display:flex;justify-content:center;align-items:flex-end;filter:drop-shadow(0 24px 24px rgba(8,18,37,.12));overflow:visible}.hero-device-image{width:282px;max-width:none;height:auto;display:block;flex:0 0 auto}
+
+    .feature-panels{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;padding:22px}
+    .feature-card{border:1px solid var(--line);border-radius:18px;padding:18px 16px;display:grid;grid-template-columns:42px 1fr;gap:14px;align-items:start;background:#fff;min-height:118px}
+    .feature-ico{width:42px;height:42px;border-radius:14px;object-fit:cover;box-shadow:0 2px 8px rgba(0,0,0,.06)}
+    .feature-card h3{margin:0 0 6px;font-size:15px;font-weight:900;line-height:1.45} .feature-card p{margin:0;color:#334158;font-size:12px;line-height:1.65;font-weight:600}
+
+    .section-title{font-size:28px;line-height:1.35;letter-spacing:-.04em;margin:0;color:var(--blue);font-weight:900} .section-sub{font-size:13px;color:#65738A;font-weight:700;margin:8px 0 0}
+    .section-head{padding:0 0 14px}
+
+    .method-panel{background:linear-gradient(135deg,#051329 0%,#08285A 100%);color:#fff;padding:40px 42px;position:relative;overflow:hidden}
+    .method-panel:after{content:'';position:absolute;right:-120px;bottom:-120px;width:300px;height:260px;border:1px solid rgba(255,255,255,.14);border-radius:50%}
+    .method-grid{display:grid;grid-template-columns:.88fr 1.12fr;gap:26px;align-items:center;position:relative;z-index:1}
+    .mini{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#80AFFF;font-weight:900;margin-bottom:10px}
+    .method-panel .section-title{color:#fff;font-size:30px;margin-bottom:12px}
+    .method-text p{margin:0;color:#E0EAFF;font-size:14px;line-height:1.95;font-weight:700;max-width:360px}
+    .method-cycle{display:grid;place-items:center;min-width:0;padding:8px 0}
+    .cycle-diagram{width:min(100%,460px);aspect-ratio:1/1;position:relative;margin:auto}
+    .cycle-diagram:before{content:'';position:absolute;inset:14%;border:2px solid rgba(175,201,248,.76);border-radius:50%} .cycle-diagram:after{content:'↻';position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);font-size:58px;line-height:1;color:#0A5BFF;opacity:.18;font-weight:900}
+    .cycle-node{position:absolute;width:128px;min-height:60px;padding:10px;border-radius:12px;background:#fff;border:1px solid #C7D6EF;box-shadow:0 12px 26px rgba(3,20,55,.18);font-size:11px;line-height:1.35;font-weight:900;color:#12315F;text-align:center;display:grid;place-items:center;z-index:2}
+    .cycle-node small{display:block;font-size:9px;color:#66758C;font-weight:800;margin-top:2px}
+    .cycle-node{transform:translate(-50%,-50%)} .cycle-node.n1{left:50%;top:14%} .cycle-node.n2{left:84.24%;top:38.88%} .cycle-node.n3{left:71.16%;top:79.12%} .cycle-node.n4{left:28.84%;top:79.12%} .cycle-node.n5{left:15.76%;top:38.88%}
+    .cycle-node.center{left:50%;top:50%;transform:translate(-50%,-50%);width:118px;height:118px;border-radius:999px;background:linear-gradient(180deg,#fff,#F2F7FF);border:2px solid #0A5BFF;color:#0347D8;font-size:16px;box-shadow:0 18px 36px rgba(3,71,216,.16)}
+
+    .reason-panel,.comparison-panel,.pricing-panel{padding:30px 34px 34px}
+    .reason-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:26px} .reason-item{display:grid;grid-template-columns:42px 1fr;gap:14px;padding:12px 0} .reason-num{width:34px;height:34px;border-radius:50%;background:var(--blue-3);color:var(--blue);display:grid;place-items:center;font-weight:900;font-size:13px} .reason-item h3{font-size:16px;margin:0 0 5px;font-weight:900} .reason-item p{font-size:12px;line-height:1.65;color:#4B5870;margin:0;font-weight:600}
+
+    .split-head{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;margin-bottom:16px}
+    .table-wrap{overflow-x:auto;overflow-y:hidden;border:1px solid var(--line);border-radius:12px;background:#fff;-webkit-overflow-scrolling:touch} .table-wrap::-webkit-scrollbar,.plans-grid::-webkit-scrollbar{height:8px} .table-wrap::-webkit-scrollbar-thumb,.plans-grid::-webkit-scrollbar-thumb{background:#BFD0E8;border-radius:999px}
+    table{width:100%;border-collapse:collapse;min-width:980px;font-size:13px} th,td{border-bottom:1px solid var(--line);border-right:1px solid var(--line);padding:13px 12px;text-align:center;vertical-align:middle;line-height:1.45} th:last-child,td:last-child{border-right:0} tr:last-child td{border-bottom:0} th{background:#F7FAFF;font-weight:900;color:#17233B} th.goaling{background:var(--blue);color:#fff} td.rowhead{background:#F8FAFD;text-align:left;font-weight:900;color:#48556B} td.goaling{background:#F1F6FF;font-weight:900;color:#071D4F}
+    .note{font-size:11px;color:#7A879A;margin:10px 0 0;font-weight:600}
+
+    .plans-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:18px} .plan{border:1px solid #C7D6EF;border-radius:14px;padding:22px 16px;background:#fff;min-height:218px;position:relative} .plan.featured{border:2px solid var(--blue);box-shadow:0 12px 28px rgba(3,71,216,.12)} .badge{position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:var(--blue);color:#fff;font-size:11px;font-weight:900;padding:5px 15px;border-radius:7px} .plan h3{font-size:15px;margin:0 0 14px;font-weight:900} .price{font-size:36px;font-weight:900;letter-spacing:-.06em;margin:0 0 8px} .price small{font-size:13px;letter-spacing:0;margin-left:2px} .plan ul{list-style:none;padding:0;margin:16px 0 0;display:grid;gap:7px;font-size:12px;color:#27334A;font-weight:700} .plan li:before{content:'✓';margin-right:7px;color:var(--blue);font-weight:900} .plan .select{margin-top:18px;display:flex;align-items:center;justify-content:center;height:40px;border-radius:8px;border:1px solid #ABC0DE;color:var(--blue);font-size:12px;font-weight:900} .plan.monthly-plan .select{margin-top:40px} .plan.featured .select{background:var(--blue);color:#fff;border-color:var(--blue)}
+    .line-wide{grid-column:1/-1;border:1px solid #16B75B;background:linear-gradient(180deg,#EFFFF6,#FFFFFF);border-radius:16px;padding:24px 22px;display:grid;grid-template-columns:1.05fr 1fr;gap:18px;align-items:center} .line-wide h3{margin:0 0 10px;font-size:22px;color:var(--green-2);font-weight:900;line-height:1.4} .line-wide p{margin:0;color:#335245;font-size:13px;line-height:1.8;font-weight:700} .line-wide ul{list-style:none;padding:0;margin:0;display:grid;gap:8px;font-size:13px;color:#27334A;font-weight:700} .line-wide li:before{content:'✓';margin-right:7px;color:var(--green);font-weight:900} .line-action{display:flex;justify-content:flex-start;margin-top:16px} .line-action a{display:inline-flex;align-items:center;gap:8px;padding:12px 18px;border:1px solid var(--green);border-radius:10px;color:var(--green-2);font-size:13px;font-weight:900;background:#fff}
+
+    .faq-panel{display:grid;grid-template-columns:.9fr 1.2fr;align-items:stretch} .faq-left{padding:34px;border-right:1px solid var(--line);background:#F8FBFF} .faq-left .section-title{margin-bottom:8px} .faq-left p{margin:0;color:#5B6A81;font-size:13px;line-height:1.85;font-weight:700;max-width:290px} .faq-right{padding:28px 34px 34px} .faq-item{border:1px solid var(--line);border-radius:10px;margin-bottom:10px;background:#fff;overflow:hidden} .faq-question{width:100%;border:0;background:#fff;padding:14px 16px;display:flex;align-items:center;justify-content:space-between;gap:20px;text-align:left;font:inherit;font-size:14px;font-weight:800;color:#28344A;cursor:pointer} .faq-question:hover{background:#F8FBFF} .faq-icon{color:var(--blue);font-size:21px;line-height:1;transition:transform .2s ease;flex:0 0 auto} .faq-item.open .faq-icon{transform:rotate(45deg)} .faq-answer{display:none;padding:0 16px 16px;color:#526078;font-size:13px;line-height:1.8;font-weight:600} .faq-item.open .faq-answer{display:block}
+
+    .final-cta{background:linear-gradient(120deg,#0244D5 0%,#0653FA 55%,#002967 100%);color:#fff;overflow:hidden;border-radius:24px;border:1px solid rgba(255,255,255,.15);position:relative} .final-cta:before{content:'';position:absolute;left:42%;top:-80px;width:320px;height:440px;background:rgba(255,255,255,.08);transform:skewX(-18deg)} .cta-inner{position:relative;z-index:2;display:grid;grid-template-columns:minmax(0,1.02fr) minmax(360px,.98fr);align-items:stretch;gap:36px;padding:48px 34px} .final-cta h2{color:#fff;font-size:36px;line-height:1.45;margin:0 0 8px} .final-cta p{font-size:15px;line-height:1.9;color:#DDEAFF;font-weight:700;margin:0} .cta-buttons{display:flex;gap:15px;flex-wrap:wrap;margin-top:20px} .btn-white{background:#fff;color:var(--blue)} .btn-ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.38)} .cta-points{display:grid;grid-template-columns:1fr;gap:14px;margin-top:0;width:100%;align-content:center} .cta-point{border:1px solid rgba(255,255,255,.22);border-radius:12px;padding:18px;text-align:left;color:#EAF2FF;font-size:13px;font-weight:800}
+
+    footer{padding:0 0 30px} .footer-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr 1.3fr;gap:30px;align-items:start;padding:34px} .footer-desktop{display:grid} .footer-mobile{display:none} .footer-logo{display:inline-flex;align-items:center;margin-bottom:8px} .footer-desktop .footer-brand{display:flex;flex-direction:column;align-items:flex-start;text-align:left} .footer-desktop .footer-tagline{font-size:12px;color:#4D5A70;font-weight:700;line-height:1.9;margin:0;text-align:left} .footer-logo img{height:34px;width:auto;display:block;background:transparent} .footer small,.footer a,.footer p{font-size:12px;color:#4D5A70;font-weight:700;line-height:1.9;margin:0} .footer h4{font-size:12px;font-weight:900;margin:0 0 10px;color:#101A2F} .footer-bottom{display:grid;grid-template-columns:1fr auto;gap:24px;align-items:end;padding:0 34px 30px} .medical{border:1px solid #C8D7EF;border-radius:8px;padding:13px 16px;color:#536177;font-size:12px;font-weight:700;line-height:1.7} .copy{text-align:right;font-size:12px;color:#607086;font-weight:700} .footer-mobile-grid{display:grid;grid-template-columns:1fr;gap:20px;padding:28px 18px 20px} .footer-brand{display:flex;flex-direction:column;align-items:flex-start;text-align:left} .footer-tagline{font-size:12px;color:#4D5A70;font-weight:700;line-height:1.9;margin:0;text-align:left} .footer-nav{display:grid;grid-template-columns:1fr;align-self:stretch} .footer-nav-item{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:15px 0;border-top:1px solid #E2E8F2;font-size:15px;font-weight:700;color:#1A243A} .footer-nav-item:last-child{border-bottom:1px solid #E2E8F2} .footer-nav-item .arrow{display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border:1px solid #D5DEEB;border-radius:999px;color:#7FA6F4;font-size:12px;flex:0 0 auto} .footer-meta{display:flex;flex-direction:column;gap:12px}
+
+    @media (max-width:1100px){ .hero-inner{grid-template-columns:1fr;gap:26px;padding-top:54px} .hero-phones{justify-content:flex-start;overflow-x:auto;padding-bottom:4px} .hero-device-wrap{width:210px}.hero-device-image{width:274px} .feature-panels{grid-template-columns:repeat(2,1fr)} .method-grid{grid-template-columns:1fr} .reason-list{grid-template-columns:1fr 1fr} .faq-panel{grid-template-columns:1fr} .faq-left{border-right:0;border-bottom:1px solid var(--line)} .footer-grid{grid-template-columns:1fr 1fr} .footer-bottom{grid-template-columns:1fr} .copy{text-align:left} }
+    @media (max-width:820px){ .container,.section-shell{padding-left:18px;padding-right:18px} .nav-links{display:none} .nav{height:64px;gap:12px} .logo img{height:28px} .header-cta{padding:9px 12px;font-size:12px;border-radius:10px} .hero:before{right:-190px;top:-210px;width:520px;height:520px;opacity:.55} .hero:after{right:-40px;top:130px;width:220px;height:160px;background-size:13px 13px} .hero-inner{padding:38px 0 28px;text-align:center} .hero-inner > div:first-child{display:flex;flex-direction:column;align-items:center} h1{font-size:clamp(44px,14vw,60px);letter-spacing:-.075em;text-align:center;margin-left:auto;margin-right:auto} .lead{font-size:16px;line-height:1.8;text-align:center;margin-left:auto;margin-right:auto;max-width:22em} .mobile-lead-break{display:block} .desc{font-size:14px;line-height:1.85;text-align:center;margin-left:auto;margin-right:auto} .actions{align-items:center;justify-content:center;width:100%} .btn{width:100%;padding:16px 18px;font-size:14px} .hero-actions{flex-direction:column;align-items:center;gap:12px} .hero-actions .btn{width:min(100%,348px);padding:14px 12px;font-size:clamp(12px,3.2vw,13px);white-space:nowrap} .hero-phones{display:none} .hero-phone-mobile{display:flex;margin:14px auto 14px} .hero-phone-mobile .hero-device-wrap{width:168px}.hero-phone-mobile .hero-device-image{width:220px;max-width:none;display:block} .feature-panels{grid-template-columns:1fr 1fr;gap:10px;padding:0} .feature-section{padding-top:24px;} .feature-section .section-card{padding:22px 14px 14px;} .feature-section .section-head{padding:0 0 14px;} .feature-section .section-title{font-size:24px;} .feature-section .section-sub{font-size:12px;}  .feature-card{grid-template-columns:34px 1fr;gap:10px;padding:14px 12px;min-height:104px} .feature-ico{width:34px;height:34px;border-radius:10px} .feature-card h3{font-size:13px;line-height:1.45} .feature-card p{font-size:11px;line-height:1.55} .method-panel{padding:30px 18px} .method-panel .section-title{font-size:26px} .cycle-diagram{width:min(100%,330px);min-width:286px} .cycle-node{width:92px;min-height:56px;font-size:9.5px;padding:8px 6px} .cycle-node.center{width:94px;height:94px;font-size:13px} .reason-panel,.comparison-panel,.pricing-panel,.faq-left,.faq-right{padding:24px 18px} .reason-list{grid-template-columns:1fr} .mobile-only{display:flex!important} table{min-width:920px;font-size:12px} th,td{padding:12px 10px} .plans-grid{grid-template-columns:1fr;gap:12px} .line-wide{grid-template-columns:1fr;padding:20px 18px} .cta-inner{grid-template-columns:1fr;padding:38px 18px} .cta-main .cta-buttons .btn{width:100%} .final-cta h2{font-size:26px} .cta-points{grid-template-columns:1fr;gap:10px} .footer-desktop{display:none}.footer-mobile{display:block}.footer-mobile-grid{grid-template-columns:1fr;gap:20px;padding:28px 18px 20px}.footer-bottom{padding:0 18px 24px} }
+    @media (max-width:430px){ .hero-phone-mobile .hero-device-wrap{width:150px}.hero-phone-mobile .hero-device-image{width:196px;max-width:none} .cycle-diagram{min-width:272px} .cycle-node{width:88px;font-size:9px} .cycle-node.center{width:90px;height:90px;font-size:12.5px} }
+  
+
+    /* Privacy policy page */
+    .legal-hero{position:relative;overflow:hidden;background:linear-gradient(135deg,#F7FAFF 0%,#EDF4FF 58%,#FFFFFF 100%);border-bottom:1px solid var(--line)}
+    .legal-hero:before{content:'';position:absolute;right:-120px;top:-210px;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,rgba(73,138,255,.28) 0%,rgba(73,138,255,0) 70%)}
+    .legal-hero:after{content:'';position:absolute;right:8%;bottom:18px;width:260px;height:145px;background-image:radial-gradient(#2F7CFF 1px,transparent 1px);background-size:15px 15px;opacity:.18}
+    .legal-hero-inner{position:relative;z-index:1;padding:78px 0 62px}
+    .legal-kicker{display:inline-flex;align-items:center;gap:8px;margin-bottom:18px;padding:7px 12px;border:1px solid #BCD2F5;border-radius:999px;background:rgba(255,255,255,.78);color:var(--blue);font-size:12px;font-weight:900;letter-spacing:.08em}
+    .legal-kicker:before{content:'';width:7px;height:7px;border-radius:50%;background:var(--blue)}
+    .legal-hero h1{margin:0;color:var(--navy);font-size:clamp(38px,5vw,64px);line-height:1.15;letter-spacing:-.055em;font-weight:900}
+    .legal-hero p{max-width:720px;margin:18px 0 0;color:#4F5F78;font-size:15px;line-height:1.9;font-weight:600}
+    .legal-breadcrumb{display:flex;align-items:center;gap:8px;margin-top:26px;color:#687790;font-size:12px;font-weight:700}
+    .legal-breadcrumb a{color:var(--blue)}
+
+    .legal-page{padding:42px 0 80px}
+    .legal-layout{display:grid;grid-template-columns:250px minmax(0,1fr);gap:28px;align-items:start}
+    .legal-toc{position:sticky;top:92px;border:1px solid var(--line);border-radius:16px;background:#fff;box-shadow:0 12px 30px rgba(15,37,74,.06);overflow:hidden}
+    .legal-toc-title{padding:18px 20px;border-bottom:1px solid var(--line);color:var(--navy);font-size:13px;font-weight:900}
+    .legal-toc nav{padding:10px}
+    .legal-toc a{display:block;padding:9px 10px;border-radius:8px;color:#516078;font-size:12px;line-height:1.45;font-weight:700;transition:.18s ease}
+    .legal-toc a:hover{background:#EFF5FF;color:var(--blue)}
+    .legal-mobile-toc{display:none;margin-bottom:18px;border:1px solid var(--line);border-radius:14px;background:#fff;overflow:hidden}
+    .legal-mobile-toc summary{cursor:pointer;list-style:none;padding:16px 18px;color:var(--navy);font-size:13px;font-weight:900}
+    .legal-mobile-toc summary::-webkit-details-marker{display:none}
+    .legal-mobile-toc summary:after{content:'＋';float:right;color:var(--blue);font-size:17px}
+    .legal-mobile-toc[open] summary:after{content:'−'}
+    .legal-mobile-toc nav{display:grid;grid-template-columns:1fr 1fr;gap:6px;padding:0 12px 14px}
+    .legal-mobile-toc a{padding:9px 8px;border-radius:7px;background:#F6F9FE;color:#53617A;font-size:11px;font-weight:700}
+
+    .legal-document{border:1px solid var(--line);border-radius:20px;background:#fff;box-shadow:0 16px 40px rgba(15,37,74,.07);overflow:hidden}
+    .legal-preamble{padding:30px 34px;background:linear-gradient(180deg,#FBFDFF,#F5F9FF);border-bottom:1px solid var(--line)}
+    .legal-preamble h2{margin:0 0 14px;color:var(--blue);font-size:14px;font-weight:900;letter-spacing:.06em}
+    .legal-preamble p{margin:0;color:#27354C;font-size:14px;line-height:2;font-weight:600}
+    .legal-section{scroll-margin-top:92px;padding:34px;border-bottom:1px solid var(--line)}
+    .legal-section:last-child{border-bottom:0}
+    .legal-section-title{display:flex;align-items:flex-start;gap:14px;margin:0 0 18px;color:var(--navy);font-size:22px;line-height:1.45;font-weight:900;letter-spacing:-.025em}
+    .legal-section-title .num{display:inline-flex;align-items:center;justify-content:center;min-width:38px;height:38px;padding:0 9px;border-radius:10px;background:var(--blue);color:#fff;font-size:12px;letter-spacing:0;box-shadow:0 8px 18px rgba(3,71,216,.18)}
+    .legal-section p{margin:0 0 14px;color:#344158;font-size:14px;line-height:2;font-weight:500}
+    .legal-section p:last-child{margin-bottom:0}
+    .legal-section ol,.legal-section ul{margin:14px 0 18px;padding-left:1.55em;color:#344158;font-size:14px;line-height:2;font-weight:500}
+    .legal-section li{padding-left:.25em;margin-bottom:7px}
+    .legal-section li:last-child{margin-bottom:0}
+    .legal-section strong{color:#14213A;font-weight:900}
+    .legal-note{margin-top:18px;padding:16px 18px;border-left:4px solid var(--blue);border-radius:0 10px 10px 0;background:#F3F7FF;color:#35425A;font-size:13px;line-height:1.9;font-weight:600}
+    .legal-medical-note{margin-top:18px;padding:18px;border:1px solid #C9D8EF;border-radius:12px;background:#FAFCFF;color:#47566E;font-size:13px;line-height:1.9;font-weight:600}
+    .legal-code-note{margin-top:18px;padding:14px 16px;border-radius:10px;background:#F5F7FA;color:#58657A;font-size:12px;line-height:1.75;font-weight:600;word-break:break-word}
+    .legal-table-wrap{margin:18px 0 20px;overflow-x:auto;border:1px solid #CDD9EA;border-radius:12px;background:#fff}
+    .legal-table{width:100%;min-width:680px;border-collapse:collapse;font-size:13px;line-height:1.75}
+    .legal-table th{padding:13px 16px;background:#EDF4FF;color:#153260;text-align:left;font-weight:900;white-space:nowrap;border-bottom:1px solid #CDD9EA}
+    .legal-table td{padding:15px 16px;vertical-align:top;color:#344158;font-weight:500;border-bottom:1px solid #E4EAF2}
+    .legal-table tr:last-child td{border-bottom:0}
+    .legal-table th+th,.legal-table td+td{border-left:1px solid #E0E7F0}
+    .legal-table.contact-table{min-width:620px}
+    .legal-table.contact-table th{width:180px}
+    .legal-table a{color:var(--blue);text-decoration:underline;text-underline-offset:3px}
+
+    @media (max-width:900px){
+      .legal-layout{grid-template-columns:1fr}.legal-toc{display:none}.legal-mobile-toc{display:block}
+      .legal-hero-inner{padding:58px 0 46px}.legal-page{padding-top:24px}
+    }
+    @media (max-width:620px){
+      .legal-hero-inner{padding:46px 0 38px}.legal-hero h1{font-size:38px}.legal-hero p{font-size:13px;line-height:1.85}
+      .legal-mobile-toc nav{grid-template-columns:1fr}
+      .legal-document{border-radius:14px}.legal-preamble,.legal-section{padding:24px 20px}
+      .legal-section-title{font-size:19px;gap:11px}.legal-section-title .num{min-width:34px;height:34px;border-radius:9px;font-size:11px}
+      .legal-section p,.legal-section ol,.legal-section ul{font-size:13px;line-height:1.95}
+      .legal-table{font-size:12px}.legal-table th,.legal-table td{padding:12px 13px}
+    }
+
+  
+    /* Terms page additions */
+    .legal-meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+    .legal-meta span{display:inline-flex;align-items:center;padding:7px 10px;border:1px solid #D6E1F1;border-radius:999px;background:#fff;color:#647189;font-size:11px;font-weight:800}
+    .legal-section .note-inline{display:block;margin-top:8px;padding:12px 14px;border-radius:9px;background:#F5F8FD;color:#58667C;font-size:12px;line-height:1.8;font-weight:600}
+    .legal-section .table-wrap{margin:18px 0 20px;overflow-x:auto;border:1px solid #CDD9EA;border-radius:12px;background:#fff}
+    .legal-toc nav{max-height:calc(100vh - 150px);overflow-y:auto;scrollbar-width:thin}
+    .legal-section a{color:var(--blue);text-decoration:underline;text-underline-offset:3px}
+
+    /* Commercial transactions page additions */
+    .tokusho-table{min-width:720px}
+    .tokusho-table th:first-child{width:220px}
+    .tokusho-table td ul{margin:8px 0 0;padding-left:1.5em}
+    .tokusho-table td li{margin-bottom:6px}
+    @media (max-width:620px){.tokusho-table th:first-child{width:190px}}
+
+  
+
+    /* mobile width and table layout fixes */
+    html,body{max-width:100%;overflow-x:hidden}
+    img,svg{max-width:100%;height:auto}
+    .container,.section-shell,.legal-layout,.legal-document,.legal-preamble,.legal-section,.section-card,.footer-grid,.footer-mobile-grid,.footer-bottom{min-width:0;max-width:100%}
+    .legal-preamble p,.legal-section p,.legal-section li,.legal-section td,.legal-section th,.legal-section a,.footer p,.footer a,.medical,.copy{overflow-wrap:anywhere;word-break:normal}
+    .legal-table-wrap,.legal-section .table-wrap{width:100%;max-width:100%;overflow-x:auto;overflow-y:hidden;-webkit-overflow-scrolling:touch}
+
+    @media (max-width:620px){
+      .container,.section-shell{padding-left:14px!important;padding-right:14px!important}
+      .legal-page{padding-top:20px}
+      .legal-hero-inner{padding:42px 0 34px!important}
+      .legal-hero h1{font-size:32px!important;line-height:1.25}
+      .legal-hero p{font-size:13px!important;line-height:1.8}
+      .legal-document{width:100%;border-radius:14px}
+      .legal-preamble,.legal-section{padding:22px 16px!important}
+      .legal-section-title{font-size:18px!important;line-height:1.45;gap:10px}
+      .legal-section p,.legal-section ol,.legal-section ul,.legal-preamble p{font-size:13px!important;line-height:1.9}
+      .legal-section ol,.legal-section ul{padding-left:1.25em}
+      .legal-mobile-toc{margin-bottom:14px}
+      .legal-mobile-toc summary{padding:14px 16px}
+      .legal-mobile-toc a{font-size:12px}
+
+      /* Standard two-column tables remain true tables and fit the screen. */
+      .legal-table:not(.wide-table):not(.contact-table):not(.tokusho-table){
+        width:100%!important;min-width:0!important;table-layout:fixed;font-size:12px!important;line-height:1.7
+      }
+      .legal-table:not(.wide-table):not(.contact-table):not(.tokusho-table) th,
+      .legal-table:not(.wide-table):not(.contact-table):not(.tokusho-table) td{
+        display:table-cell!important;width:auto!important;min-width:0!important;padding:11px 10px!important;white-space:normal!important;overflow-wrap:anywhere;word-break:break-word
+      }
+      .legal-table:not(.wide-table):not(.contact-table):not(.tokusho-table) th:first-child,
+      .legal-table:not(.wide-table):not(.contact-table):not(.tokusho-table) td:first-child{width:34%}
+
+      /* Three-column tables scroll only inside their own frame. */
+      .legal-table-wrap:has(.wide-table){overflow-x:auto}
+      .legal-table.wide-table{width:620px!important;min-width:620px!important;font-size:12px!important}
+      .legal-table.wide-table th,.legal-table.wide-table td{padding:11px 10px!important;white-space:normal!important}
+
+      /* Contact and legal disclosure tables become readable stacked cards. */
+      .legal-table.contact-table,
+      .legal-table.tokusho-table,
+      .legal-table.contact-table tbody,
+      .legal-table.tokusho-table tbody,
+      .legal-table.contact-table tr,
+      .legal-table.tokusho-table tr,
+      .legal-table.contact-table th,
+      .legal-table.tokusho-table th,
+      .legal-table.contact-table td,
+      .legal-table.tokusho-table td{
+        display:block;width:100%!important;min-width:0!important
+      }
+      .legal-table.contact-table,
+      .legal-table.tokusho-table{border-collapse:separate;border-spacing:0;font-size:12px!important}
+      .legal-table.tokusho-table thead{display:none}
+      .legal-table.contact-table tr,
+      .legal-table.tokusho-table tbody tr{border-bottom:1px solid #DCE5F1}
+      .legal-table.contact-table tr:last-child,
+      .legal-table.tokusho-table tbody tr:last-child{border-bottom:0}
+      .legal-table.contact-table th,
+      .legal-table.tokusho-table tbody td:first-child{
+        padding:12px 13px 7px!important;background:#EDF4FF;color:#153260;font-weight:900;border:0!important;white-space:normal!important
+      }
+      .legal-table.contact-table td,
+      .legal-table.tokusho-table tbody td:last-child{
+        padding:0 13px 13px!important;background:#fff;color:#344158;border:0!important;white-space:normal!important;overflow-wrap:anywhere
+      }
+      .legal-table.contact-table th+th,.legal-table.contact-table td+td,
+      .legal-table.tokusho-table th+th,.legal-table.tokusho-table td+td{border-left:0!important}
+      .legal-table.contact-table th{width:100%!important}
+      .legal-table.tokusho-table td ul{padding-left:1.25em;margin-top:8px}
+
+      .footer-mobile-grid{padding:24px 16px 18px!important}
+      .footer-bottom{padding:0 16px 22px!important}
+    }
+
+  
+
+    /* final mobile containment and table alignment fixes */
+    .legal-table th,
+    .legal-table td,
+    .legal-section .table-wrap th,
+    .legal-section .table-wrap td{
+      text-align:left!important;
+    }
+
+    @media (max-width:900px){
+      .legal-layout{
+        grid-template-columns:minmax(0,1fr)!important;
+        width:100%;
+        max-width:100%;
+      }
+      .legal-layout > *{
+        min-width:0!important;
+        max-width:100%!important;
+      }
+      .legal-layout > div{
+        width:100%!important;
+      }
+    }
+
+    @media (max-width:620px){
+      html,body{
+        width:100%;
+        max-width:100%;
+        overflow-x:hidden;
+      }
+      body{margin:0}
+      .legal-page,
+      .legal-layout,
+      .legal-layout > div,
+      .legal-mobile-toc,
+      .legal-document,
+      .legal-preamble,
+      .legal-section,
+      .legal-table-wrap,
+      .legal-section .table-wrap{
+        width:100%!important;
+        max-width:100%!important;
+        min-width:0!important;
+      }
+      .legal-mobile-toc,
+      .legal-document{
+        box-sizing:border-box;
+      }
+      .legal-table-wrap,
+      .legal-section .table-wrap{
+        overflow-x:auto!important;
+        overflow-y:hidden!important;
+      }
+      .legal-table th,
+      .legal-table td,
+      .legal-section .table-wrap th,
+      .legal-section .table-wrap td{
+        text-align:left!important;
+      }
+    }
+
+  
+
+    /* table vertical alignment */
+    .legal-document table th,
+    .legal-document table td,
+    .legal-table th,
+    .legal-table td,
+    .legal-section .table-wrap th,
+    .legal-section .table-wrap td{
+      text-align:left!important;
+      vertical-align:middle!important;
+    }
+
+  
+    /* tokushoho tables: keep two-column layout and vertically center cells on mobile */
+    @media (max-width:620px){
+      .legal-table.tokusho-table{
+        display:table!important;
+        width:100%!important;
+        min-width:0!important;
+        table-layout:fixed!important;
+        border-collapse:collapse!important;
+      }
+      .legal-table.tokusho-table tbody{display:table-row-group!important}
+      .legal-table.tokusho-table tr{
+        display:table-row!important;
+        border-bottom:0!important;
+      }
+      .legal-table.tokusho-table th,
+      .legal-table.tokusho-table td{
+        display:table-cell!important;
+        width:auto!important;
+        min-width:0!important;
+        padding:12px 10px!important;
+        vertical-align:middle!important;
+        text-align:left!important;
+        border-bottom:1px solid #E4EAF2!important;
+        white-space:normal!important;
+        overflow-wrap:anywhere;
+        word-break:break-word;
+      }
+      .legal-table.tokusho-table th{
+        width:34%!important;
+        background:#EDF4FF!important;
+        color:#153260!important;
+        font-weight:900!important;
+      }
+      .legal-table.tokusho-table td{
+        background:#fff!important;
+        color:#344158!important;
+      }
+      .legal-table.tokusho-table tr:last-child th,
+      .legal-table.tokusho-table tr:last-child td{
+        border-bottom:0!important;
+      }
+    }
+
+  
+
+    /* tokushoho table grid borders */
+    .legal-table.tokusho-table{
+      width:100%!important;
+      border-collapse:collapse!important;
+      border-spacing:0!important;
+    }
+    .legal-table.tokusho-table thead th,
+    .legal-table.tokusho-table tbody td{
+      border:1px solid #CDD9EA!important;
+      text-align:left!important;
+      vertical-align:middle!important;
+    }
+    .legal-table.tokusho-table tbody td:first-child{
+      width:34%!important;
+      background:#EDF4FF!important;
+      color:#153260!important;
+      font-weight:900!important;
+    }
+    .legal-table.tokusho-table tbody td:last-child{
+      background:#fff!important;
+      color:#344158!important;
+    }
+
+    @media (max-width:620px){
+      .legal-table.tokusho-table thead{
+        display:table-header-group!important;
+      }
+      .legal-table.tokusho-table thead tr{
+        display:table-row!important;
+      }
+      .legal-table.tokusho-table thead th,
+      .legal-table.tokusho-table tbody td{
+        display:table-cell!important;
+        padding:12px 10px!important;
+        border:1px solid #CDD9EA!important;
+      }
+      .legal-table.tokusho-table tbody td:first-child{
+        width:34%!important;
+      }
+    }
+
+  
+
+    /* tokushoho tables: match the table design used on the other legal pages */
+    .legal-table.tokusho-table{
+      display:table!important;
+      width:100%!important;
+      min-width:680px!important;
+      table-layout:auto!important;
+      border-collapse:collapse!important;
+      border-spacing:0!important;
+      font-size:13px!important;
+      line-height:1.75!important;
+    }
+    .legal-table.tokusho-table thead{display:table-header-group!important}
+    .legal-table.tokusho-table tbody{display:table-row-group!important}
+    .legal-table.tokusho-table tr{display:table-row!important;border:0!important}
+    .legal-table.tokusho-table th,
+    .legal-table.tokusho-table td{
+      display:table-cell!important;
+      min-width:0!important;
+      text-align:left!important;
+      vertical-align:middle!important;
+      white-space:normal!important;
+      overflow-wrap:anywhere;
+      word-break:break-word;
+    }
+    .legal-table.tokusho-table thead th{
+      padding:13px 16px!important;
+      background:#EDF4FF!important;
+      color:#153260!important;
+      font-weight:900!important;
+      border:0!important;
+      border-bottom:1px solid #CDD9EA!important;
+    }
+    .legal-table.tokusho-table thead th+th{
+      border-left:1px solid #E0E7F0!important;
+    }
+    .legal-table.tokusho-table tbody td{
+      padding:15px 16px!important;
+      background:#fff!important;
+      color:#344158!important;
+      font-weight:500!important;
+      border:0!important;
+      border-bottom:1px solid #E4EAF2!important;
+    }
+    .legal-table.tokusho-table tbody td+td{
+      border-left:1px solid #E0E7F0!important;
+    }
+    .legal-table.tokusho-table tbody tr:last-child td{
+      border-bottom:0!important;
+    }
+    .legal-table.tokusho-table th:first-child,
+    .legal-table.tokusho-table td:first-child{
+      width:34%!important;
+    }
+
+    @media (max-width:620px){
+      .legal-table.tokusho-table{
+        width:100%!important;
+        min-width:0!important;
+        table-layout:fixed!important;
+        font-size:12px!important;
+        line-height:1.7!important;
+      }
+      .legal-table.tokusho-table thead th,
+      .legal-table.tokusho-table tbody td{
+        padding:11px 10px!important;
+      }
+      .legal-table.tokusho-table th:first-child,
+      .legal-table.tokusho-table td:first-child{
+        width:34%!important;
+      }
+    }
+
+  </style>
+</head>
+<body id="top">
+  <header class="header"><div class="container nav"><a aria-label="Goaling ホーム" class="logo" href="index.html"><img alt="Goalingロゴ" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1NjAgMTAwIiByb2xlPSJpbWciIGFyaWEtbGFiZWxsZWRieT0idGl0bGUgZGVzYyI+CiAgPHRpdGxlIGlkPSJ0aXRsZSI+R29hbGluZyB3b3JkbWFyazwvdGl0bGU+CiAgPGRlc2MgaWQ9ImRlc2MiPlRyYW5zcGFyZW50IHdvcmRtYXJrIGxvZ28gZm9yIEdvYWxpbmcgd2l0aG91dCB0aGUgaWNvbiBtYXJrLjwvZGVzYz4KICA8dGV4dCB4PSIwIiB5PSI3MiIgZmlsbD0iIzBEMUIyQSIgZm9udC1mYW1pbHk9IkludGVyLCBBcmlhbCwgSGVsdmV0aWNhLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjcyIiBmb250LXdlaWdodD0iODAwIiBsZXR0ZXItc3BhY2luZz0iLTEiPkdvYWxpbmc8L3RleHQ+CiAgPGNpcmNsZSBjeD0iMjAxIiBjeT0iMTYiIHI9IjciIGZpbGw9IiNFNjZDMkQiLz4KPC9zdmc+"/></a><nav aria-label="グローバルナビゲーション" class="nav-links"><a href="index.html#service">サービスについて</a><a href="index.html#method">Goalingメソッド</a><a href="index.html#pricing">料金プラン</a><a href="index.html#faq">よくある質問</a></nav><a class="header-cta" href="index.html#cta">無料体験セッションを予約する</a></div></header>
+  <main>
+    <section class="legal-hero">
+      <div class="container legal-hero-inner">
+        <div class="legal-kicker">COMMERCIAL TRANSACTIONS</div>
+        <h1>特定商取引法に基づく表記</h1>
+        <p>Goalingの販売条件、利用料金、支払方法、解約・返金条件、役務提供時期について表示しています。</p>
+        <div class="legal-breadcrumb"><a href="index.html">Goaling</a><span>／</span><span>特定商取引法に基づく表記</span></div>
+      </div>
+    </section>
+
+    <section class="legal-page">
+      <div class="container legal-layout">
+        <aside class="legal-toc" aria-label="目次">
+          <div class="legal-toc-title">目次</div>
+          <nav>
+            <a href="#section-1">基本情報</a>
+            <a href="#section-2">販売価格・支払条件</a>
+            <a href="#section-3">役務提供・解約・返金</a>
+            <a href="#section-4">利用環境・長期休業時の取扱い</a>
+          </nav>
+        </aside>
+
+        <div>
+          <details class="legal-mobile-toc">
+            <summary>目次を表示する</summary>
+            <nav>
+              <a href="#section-1">基本情報</a>
+              <a href="#section-2">販売価格・支払条件</a>
+              <a href="#section-3">役務提供・解約・返金</a>
+              <a href="#section-4">利用環境・長期休業時の取扱い</a>
+            </nav>
+          </details>
+
+          <article class="legal-document">
+            <section class="legal-preamble">
+              <h2>本表記について</h2>
+              <p>本表記は、特定商取引法に基づき、Goaling（ゴーリング）の販売条件について表示するものです。所在地および電話番号は、プライバシー保護のため本ページでは記載を省略しています。ご請求をいただいた場合は、購入の有無にかかわらず、遅滞なく電子メールにて開示いたします。</p>
+              <div class="legal-meta"><span>最終改定日：2026年6月13日</span></div>
+            </section>
+
+            <section class="legal-section" id="section-1">
+              <h2 class="legal-section-title"><span class="num">01</span><span>基本情報</span></h2>
+              <div class="legal-table-wrap">
+                <table class="legal-table tokusho-table">
+                  <thead><tr><th>項目</th><th>内容</th></tr></thead>
+                  <tbody>
+                    <tr><td>事業者名（販売業者）</td><td>永田 海翔</td></tr>
+                    <tr><td>運営統括責任者</td><td>永田 海翔</td></tr>
+                    <tr><td>所在地</td><td>プライバシー保護のため本ページでは記載を省略しています。ご請求をいただいた場合は、購入の有無にかかわらず、遅滞なく電子メールにて開示いたします（請求先：下記メールアドレスまたはLINE公式アカウント）。</td></tr>
+                    <tr><td>電話番号</td><td>プライバシー保護のため本ページでは記載を省略しています。ご請求をいただいた場合は、購入の有無にかかわらず、遅滞なく電子メールにて開示いたします（お問い合わせは原則、下記メールアドレスまたはLINE公式アカウントにて受け付けます）。</td></tr>
+                    <tr><td>メールアドレス</td><td><a href="mailto:kaito.nagata615@gmail.com">kaito.nagata615@gmail.com</a></td></tr>
+                    <tr><td>サービス名</td><td>Goaling（ゴーリング）— 肉体・健康習慣特化型1対1アカウンタビリティ伴走サービス</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+
+            <section class="legal-section" id="section-2">
+              <h2 class="legal-section-title"><span class="num">02</span><span>販売価格・支払条件</span></h2>
+              <div class="legal-table-wrap">
+                <table class="legal-table tokusho-table">
+                  <thead><tr><th>項目</th><th>内容</th></tr></thead>
+                  <tbody>
+                    <tr><td>販売価格</td><td>月額プラン 9,800円（税込）／ 3ヶ月一括プラン 26,400円（税込・3ヶ月分前払い／1ヶ月あたり8,800円相当）／ 年間一括プラン 88,000円（税込・12ヶ月分前払い／1ヶ月あたり約7,333円相当）／ ゼロ期生プラン 初月のみ4,900円（税込・先着5名・2ヶ月目以降は9,800円）。</td></tr>
+                    <tr><td>商品代金以外の必要料金</td><td>本サービスの利用および各種通知の受信に必要なインターネット通信料・端末利用料等は利用者の負担とします。銀行振込を選択した場合の振込手数料は利用者の負担とします。</td></tr>
+                    <tr><td>代金の支払時期</td><td>月額プランは契約開始日（更新日）に毎月前払い（申込時に初回決済、以降毎月申込日に自動課金）。3ヶ月一括プラン・年間一括プランは契約時に一括前払い。</td></tr>
+                    <tr><td>代金の支払方法</td><td>クレジットカード決済（決済代行サービス「会費ペイ」等）／ 銀行振込。</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+
+            <section class="legal-section" id="section-3">
+              <h2 class="legal-section-title"><span class="num">03</span><span>役務提供・解約・返金</span></h2>
+              <div class="legal-table-wrap">
+                <table class="legal-table tokusho-table">
+                  <thead><tr><th>項目</th><th>内容</th></tr></thead>
+                  <tbody>
+                    <tr><td>役務の提供時期</td><td>申込承諾・入金（決済）確認後、初回オンボーディングセッション（45分・入会時1回）を経て運用を開始します。</td></tr>
+                    <tr><td>返品・キャンセル（解約・返金）</td><td>月額プランは更新日の7日前までに申し出ることで翌月以降の課金を停止（翌月解約）できます。支払済み期間の日割返金は行いません。3ヶ月一括プランは中途解約・日割返金を行いません。年間一括プランは、支払済み88,000円から「通常月額9,800円 × 利用月数」を差し引いた残額を返金します（通常月額精算方式）。いずれのプランも、下記「14日条件付き返金保証」を満たす場合は別途返金の対象となります（ゼロ期生プランを除く）。</td></tr>
+                    <tr><td>14日条件付き返金保証<br>（ゼロ期生プラン対象外）</td><td>月額プラン・3ヶ月一括プラン・年間一括プランを新規に契約した利用者が、以下の<strong>全条件</strong>を満たす場合、初回決済額を全額返金します。
+                      <ul>
+                        <li>契約開始日から14日以内（かつ初回オンボーディングセッション実施後14日以内の早い方）に、メールまたはLINEで申請すること</li>
+                        <li>初回オンボーディングセッションに参加済みであること</li>
+                        <li>契約開始日からの日次報告を7日以上提出していること</li>
+                        <li>過去に本返金保証を利用していないこと</li>
+                      </ul>
+                      ゼロ期生プランには本保証は適用しません。詳細は<a href="goaling_terms_of_service.html#article-5">利用規約第5条</a>の定めによります。</td></tr>
+                    <tr><td>解約方法</td><td>LINE公式アカウント「Goaling」より解約を申請。詳細は<a href="goaling_terms_of_service.html">利用規約</a>の定めによります。</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+
+            <section class="legal-section" id="section-4">
+              <h2 class="legal-section-title"><span class="num">04</span><span>利用環境・長期休業時の取扱い</span></h2>
+              <div class="legal-table-wrap">
+                <table class="legal-table tokusho-table">
+                  <thead><tr><th>項目</th><th>内容</th></tr></thead>
+                  <tbody>
+                    <tr><td>動作環境</td><td>LINE、Google Meet、モバイルブラウザ（Web App用）、決済が利用可能なインターネット環境。</td></tr>
+                    <tr><td>連休・長期休業時の取扱い</td><td>当方の長期休業期間中（年末年始・大型連休等）に申込・決済が成立した場合、初回オンボーディングセッションの日程調整および役務提供の開始が、休業明け以降となることがあります。この場合も、休業期間は契約期間・利用料金の課金対象から除外し、役務提供の開始日を起点として運用日数を算定します。</td></tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="legal-note">本ページに記載のない事項は、別途定める<a href="goaling_terms_of_service.html">利用規約</a>および<a href="goaling_privacy_policy.html">プライバシーポリシー</a>をご確認ください。</div>
+            </section>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="section-shell footer"><div class="section-card"><div class="footer-grid footer-desktop"><div class="footer-brand"><div class="footer-logo"><img alt="Goalingロゴ" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1NjAgMTAwIiByb2xlPSJpbWciIGFyaWEtbGFiZWxsZWRieT0idGl0bGUgZGVzYyI+CiAgPHRpdGxlIGlkPSJ0aXRsZSI+R29hbGluZyB3b3JkbWFyazwvdGl0bGU+CiAgPGRlc2MgaWQ9ImRlc2MiPlRyYW5zcGFyZW50IHdvcmRtYXJrIGxvZ28gZm9yIEdvYWxpbmcgd2l0aG91dCB0aGUgaWNvbiBtYXJrLjwvZGVzYz4KICA8dGV4dCB4PSIwIiB5PSI3MiIgZmlsbD0iIzBEMUIyQSIgZm9udC1mYW1pbHk9IkludGVyLCBBcmlhbCwgSGVsdmV0aWNhLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjcyIiBmb250LXdlaWdodD0iODAwIiBsZXR0ZXItc3BhY2luZz0iLTEiPkdvYWxpbmc8L3RleHQ+CiAgPGNpcmNsZSBjeD0iMjAxIiBjeT0iMTYiIHI9IjciIGZpbGw9IiNFNjZDMkQiLz4KPC9zdmc+"/></div><p class="footer-tagline">「続ける」を仕組み化する。</p></div><div><h4>サービスについて</h4><p><a href="index.html#service">サービスについて</a><br/><a href="index.html#method">Goalingメソッド</a><br/><a href="index.html#pricing">料金プラン</a></p></div><div><h4>よくある質問</h4><p><a href="index.html#faq">よくある質問</a></p></div><div><h4>各種ポリシー</h4><p><a aria-current="page" href="#top">特定商取引法に基づく表記</a><br/><a href="goaling_privacy_policy.html">プライバシーポリシー</a><br/><a href="goaling_terms_of_service.html">利用規約</a></p></div></div><div class="footer-mobile"><div class="footer-mobile-grid"><div class="footer-brand"><div class="footer-logo"><img alt="Goalingロゴ" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1NjAgMTAwIiByb2xlPSJpbWciIGFyaWEtbGFiZWxsZWRieT0idGl0bGUgZGVzYyI+CiAgPHRpdGxlIGlkPSJ0aXRsZSI+R29hbGluZyB3b3JkbWFyazwvdGl0bGU+CiAgPGRlc2MgaWQ9ImRlc2MiPlRyYW5zcGFyZW50IHdvcmRtYXJrIGxvZ28gZm9yIEdvYWxpbmcgd2l0aG91dCB0aGUgaWNvbiBtYXJrLjwvZGVzYz4KICA8dGV4dCB4PSIwIiB5PSI3MiIgZmlsbD0iIzBEMUIyQSIgZm9udC1mYW1pbHk9IkludGVyLCBBcmlhbCwgSGVsdmV0aWNhLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjcyIiBmb250LXdlaWdodD0iODAwIiBsZXR0ZXItc3BhY2luZz0iLTEiPkdvYWxpbmc8L3RleHQ+CiAgPGNpcmNsZSBjeD0iMjAxIiBjeT0iMTYiIHI9IjciIGZpbGw9IiNFNjZDMkQiLz4KPC9zdmc+"/></div><p class="footer-tagline">「続ける」を仕組み化する。</p></div><nav aria-label="フッターナビゲーション" class="footer-nav"><a class="footer-nav-item" href="index.html"><span>Top</span><span class="arrow">→</span></a><a class="footer-nav-item" href="index.html#method"><span>Goalingメソッド</span><span class="arrow">→</span></a><a class="footer-nav-item" href="index.html#pricing"><span>料金プラン</span><span class="arrow">→</span></a><a class="footer-nav-item" href="index.html#faq"><span>よくある質問</span><span class="arrow">→</span></a><a aria-current="page" class="footer-nav-item" href="#top"><span>特定商取引法に基づく表記</span><span class="arrow">→</span></a><a class="footer-nav-item" href="goaling_privacy_policy.html"><span>プライバシーポリシー</span><span class="arrow">→</span></a><a class="footer-nav-item" href="goaling_terms_of_service.html"><span>利用規約</span><span class="arrow">→</span></a></nav></div></div><div class="footer-bottom"><div class="medical">医療免責：Goalingは医療行為を提供するものではありません。成果には個人差があり、結果を保証するものではありません。</div><div class="copy">© 2026 Goaling. All rights reserved.</div></div></div></footer>
+</body>
+</html>
