@@ -1,0 +1,14 @@
+# Wrangler local state
+.wrangler/
+
+# セッション排他ロック（ローカル限定・配信させない）
+.agent-lock
+
+# 依存・OS・エディタ
+node_modules/
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.log
