@@ -304,6 +304,47 @@
 .gx-promise-card p{margin:0;font-size:13px;line-height:1.85;color:var(--muted);font-weight:600}
 @media (max-width:860px){.gx-promise{padding:24px 18px 26px}.gx-promise-grid{grid-template-columns:1fr;gap:12px}.gx-promise-card h3 br{display:none}}
 
+
+/* ===== スマホ余裕・可読性パス (gx-mobile-comfort) ===== */
+@media (max-width:480px){
+  /* 見出し全般を一段小さく（長い見出しの端詰まり回避） */
+  .section-title{font-size:23px;line-height:1.4}
+  /* メソッド導入＋原因→型＋式 */
+  .gx-method-lead{font-size:13px;line-height:1.8;padding:0 2px}
+  .gx-cause-bad,.gx-cause-fix{padding:12px 13px}
+  .gx-cause-bad h5{font-size:13.5px}
+  .gx-cause-bad p,.gx-cause-fix p{font-size:12px;line-height:1.7}
+  .gx-formula{font-size:17px;padding:15px 12px;gap:5px 8px}
+  .gx-formula small{font-size:11px;line-height:1.6;margin-top:6px}
+  /* フロー：タイムラインの左インデントを詰めて本文幅を確保 */
+  .gx-flow{padding:22px 14px 24px}
+  .gx-flow-sub{font-size:12.5px;line-height:1.8}
+  .gx-spine{left:15px}
+  .gx-node{left:7px}
+  .gx-phase-side{padding-left:38px}
+  .gx-phase-body{padding-left:38px}
+  .gx-phase-name{font-size:19px}
+  .gx-phase-lead{font-size:12px;line-height:1.7}
+  .gx-step{padding:14px 14px}
+  .gx-step-head h4{font-size:14px}
+  .gx-act,.gx-react{font-size:12.5px;line-height:1.7}
+  .gx-act:before,.gx-react:before{font-size:9.5px;padding:2px 6px}
+  /* 到達パネル */
+  .gx-arrival-card{padding:16px 13px}
+  .gx-block-h{font-size:12.5px}
+  .gx-daily-step{font-size:11px;padding:9px 10px;line-height:1.5}
+  .gx-loop span{font-size:11px;padding:6px 10px}
+  .gx-arrival-illust figcaption{font-size:11.5px}
+  /* 約束 */
+  .gx-promise{padding:22px 14px 24px}
+  .gx-promise-card{padding:18px 15px}
+  .gx-promise-card h3{font-size:15px;line-height:1.55}
+  .gx-promise-card p{font-size:12.5px;line-height:1.8}
+  /* サポート境界・選ばれる理由の文字も詰まり回避 */
+  .rnw-scope-section .rnw-scope-col li{font-size:13px}
+  .reason-panel .reason-item{padding:15px 15px}
+}
+
 </style>
 </head>
 <body>
